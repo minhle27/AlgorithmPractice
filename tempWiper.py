@@ -29,3 +29,5 @@ def seekanddestroy(curDir):
 		seekanddestroy(subfolder)
 
 seekanddestroy('Vault/')
+
+# command: find . -type f -name *.exe -delete
