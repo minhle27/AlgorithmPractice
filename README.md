@@ -8,3 +8,5 @@ Topics included:
 
 2. Stack, Queue, Deque:
     * Stack: kattis/evenup
+
+2. Two pointer: VNOJ/nksgame
