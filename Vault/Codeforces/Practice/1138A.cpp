@@ -22,35 +22,34 @@ typedef tuple<int, int, int> iii;
 #define PR(a,n) { cout << #a << " = "; FOR(_,1,n) cout << a[_] << ' '; cout << endl; }
 #define PR0(a,n) { cout << #a << " = "; REP(_,n) cout << a[_] << ' '; cout << endl; }
 
+const int N = 1e5 + 9;
+int n;
+int a[N];
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n; cin >> n; 
-    int card;
-    stack<int> s;
+    cin >> n;
+    for (int i = 1; i <= n; i++){
+        cin >> a[i];
+    }
+    a[n + 1] = -1;
+    
+    int ans(0); int cnt(0); int cntprev(0);
 
-    for (int i = 0; i < n; i++){
-        cin >> card;
-        if (s.empty()){
-            s.push(card);
+    for (int i = 1; i <= n + 1; i++){
+        if (a[i] != a[i - 1]) {
+            ans = max(ans, min(cntprev, cnt) * 2);
+            cntprev = cnt;
+            cnt = 1;
         }
         else {
-            if ((s.top() + card) % 2 == 0){
-                s.pop(); 
-            }
-            else {
-                s.push(card);
-            }
+            cnt++;
         }
     }
-    
-    cout << sz(s) << endl;
 
+    cout << ans << endl;
     return 0;
 }
-
-// -1 -2 3 4
-// -9 -8 -1 29
