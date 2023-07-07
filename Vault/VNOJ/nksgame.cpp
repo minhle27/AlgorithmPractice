@@ -22,32 +22,46 @@ typedef tuple<int, int, int> iii;
 #define PR(a,n) { cout << #a << " = "; FOR(_,1,n) cout << a[_] << ' '; cout << endl; }
 #define PR0(a,n) { cout << #a << " = "; REP(_,n) cout << a[_] << ' '; cout << endl; }
 
+const ll MAX = 1e5 + 7;
+const ll INF = 1e9 * 2 + 5;
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n; cin >> n; 
-    int card;
-    stack<int> s;
+    int n; cin >> n;
+    vector<ll> b(n), c(n);
 
     for (int i = 0; i < n; i++){
-        cin >> card;
-        if (s.empty()){
-            s.push(card);
+        cin >> b[i];
+    }
+
+    for (int i = 0; i < n; i++){
+        cin >> c[i];
+    }
+
+    sort(b.begin(), b.end()); sort(c.begin(), c.end());
+
+    ll ans = INF;
+    for (int i = 0; i < n; i++){
+        ll lb; ll ub;
+        vector<ll>::iterator it = lower_bound(c.begin(), c.end(), -b[i]);
+        ll index = it - c.begin();
+        if (index > n - 1) {
+            lb = c[index - 1];
+            ans = min(ans, abs(lb + b[i]));
+        }
+        else if (index == 0){
+            ub = c[index];
+            ans = min(ans, abs(ub + b[i]));
         }
         else {
-            if ((s.top() + card) % 2 == 0){
-                s.pop(); 
-            }
-            else {
-                s.push(card);
-            }
+            lb = c[index - 1]; ub = c[index];
+            ans = min(ans, min(abs(lb + b[i]), abs(ub + b[i])));
         }
     }
-    
-    cout << sz(s) << endl;
 
+    cout << ans << endl;
     return 0;
 }
