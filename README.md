@@ -7,6 +7,6 @@ Topics included:
     * Binary Search: VNOJ/nksgame
 
 2. Stack, Queue, Deque:
-    * Stack: kattis/evenup
+    * Stack: kattis/evenup, SPOJ/ONP(transform algebraic expression into RPN)
 
 2. Two pointer: VNOJ/nksgame
