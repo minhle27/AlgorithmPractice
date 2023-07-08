@@ -31,3 +31,4 @@ def seekanddestroy(curDir):
 seekanddestroy('Vault/')
 
 # command: find . -type f -name *.exe -delete
+# g++ -std=c++11 -O2 -Wall test.cpp -o test.exe

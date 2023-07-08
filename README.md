@@ -9,4 +9,7 @@ Topics included:
 2. Stack, Queue, Deque:
     * Stack: kattis/evenup, SPOJ/ONP(transform algebraic expression into RPN)
 
-2. Two pointer: VNOJ/nksgame
+3. Two pointer: VNOJ/nksgame
+
+7. Graphs:
+    * BFS: LQDOJ/4601(counting connected components)
