@@ -1,16 +1,17 @@
 # Data Structures and Algorithms Practice
 ## Introduction
-This repository contains my solutions to algorithmic problems. Main languages are C++ (sometimes python). \
+This repository contains my solutions to algorithmic problems. Main languages are C++ (sometimes python). 
+Difficulty Level: M (medium), H (hard), E (easy)
 Topics included:
 1. Basic Algorithms:
-    * Sorting: kattis/sortofsorting,
-    * Binary Search: VNOJ/nksgame
+    * Sorting: kattis/sortofsorting(E),
+    * Binary Search: VNOJ/nksgame(M)
 
 2. Stack, Queue, Deque:
-    * Stack: kattis/evenup, SPOJ/ONP(transform algebraic expression into RPN)
+    * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
 
-3. Two pointers: VNOJ/nksgame, CSES/1090
+3. Two pointers: VNOJ/nksgame(M), CSES/1090(E)
 
 7. Graphs:
-    * BFS: LQDOJ/4601(counting connected components), SPOJ/BCDAISY
-    * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN
+    * BFS: LQDOJ/4601(E)(counting connected components), SPOJ/BCDAISY(E), VNOJ/nkguard(H)
+    * FloodFill: SPOJ/UCV2013H(E), SPOJ/BCLKCOUN(E)
