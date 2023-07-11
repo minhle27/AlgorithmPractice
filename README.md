@@ -11,7 +11,8 @@ Topics included:
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
-    * Sets and Multisets: CSES/1091(E)
+    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M)
+    
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
 
