@@ -7,7 +7,7 @@ Topics included:
     * Sorting: kattis/sortofsorting(E),
     * Binary Search: VNOJ/nksgame(M)
     * Greedy: CSES/1090
-    * Complete Search: CF/863B(M, Greedy)
+    * Complete Search: CF/863B(M, Greedy), USACO/963(M)
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
@@ -21,3 +21,9 @@ Topics included:
     * FloodFill: SPOJ/UCV2013H(E), SPOJ/BCLKCOUN(E)
 
 5. Dynamic Programming
+
+6. Backtracking
+
+7. String:
+    * KMP:
+    * Trie:
