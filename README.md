@@ -27,3 +27,5 @@ Topics included:
 7. String:
     * KMP:
     * Trie:
+
+8. Prefix Sums: USACO/595(M)
