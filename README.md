@@ -28,4 +28,4 @@ Topics included:
     * KMP:
     * Trie:
 
-8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595)
+8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M)
