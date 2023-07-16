@@ -8,6 +8,7 @@ Topics included:
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011)
     * Greedy: CSES/1090, CSES/1629(E)
     * Complete Search: CF/863B(M, Greedy), USACO/963(M)
+    * Backtracking: CSES/1623(E)
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
@@ -21,8 +22,6 @@ Topics included:
     * FloodFill: SPOJ/UCV2013H(E), SPOJ/BCLKCOUN(E)
 
 5. Dynamic Programming
-
-6. Backtracking
 
 7. String:
     * KMP:
