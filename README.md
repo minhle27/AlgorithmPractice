@@ -5,7 +5,7 @@ Difficulty Level: M (medium), H (hard), E (easy)
 Topics included:
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E),
-    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E)
+    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011)
     * Greedy: CSES/1090, CSES/1629(E)
     * Complete Search: CF/863B(M, Greedy), USACO/963(M)
 
