@@ -6,7 +6,7 @@ Topics included:
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E),
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E)
-    * Greedy: CSES/1090
+    * Greedy: CSES/1090, CSES/1629(E)
     * Complete Search: CF/863B(M, Greedy), USACO/963(M)
 
 2. Data Structures:
