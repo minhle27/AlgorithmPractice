@@ -5,7 +5,7 @@ Difficulty Level: M (medium), H (hard), E (easy)
 Topics included:
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E),
-    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011)
+    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M)
     * Greedy: CSES/1090, CSES/1629(E)
     * Complete Search: CF/863B(M, Greedy), USACO/963(M)
     * Backtracking: CSES/1623(E)
@@ -13,7 +13,7 @@ Topics included:
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M)
-    
+    * Heap(PQ):  USACO/690(M)
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
 

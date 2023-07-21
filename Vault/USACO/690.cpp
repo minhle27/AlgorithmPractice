@@ -23,7 +23,22 @@ typedef tuple<int, int, int> iii;
 #define PR(a,n) { cout << #a << " = "; FOR(_,1,n) cout << a[_] << ' '; cout << endl; }
 #define PR0(a,n) { cout << #a << " = "; REP(_,n) cout << a[_] << ' '; cout << endl; }
 
-int n;
+ll N, tmax;
+vl d;
+
+bool P(ll k){
+    priority_queue<ll, vl, greater<ll>> pq;
+    ll lasttime = 0;
+    for (int i = 1; i <= N; i++){
+        if (pq.size() == k){
+            lasttime = pq.top();
+            pq.pop();
+        }
+        if (lasttime + d[i] > tmax) return false;
+        pq.push(lasttime + d[i]);
+    }
+    return true;
+}
 
 
 int main()
@@ -31,6 +46,28 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
+    freopen("cowdance.in", "r", stdin);
+    freopen("cowdance.out", "w", stdout);
+
+    cin >> N >> tmax;
+    d.resize(N + 1); d[0] = 0;
+    for (int i = 1; i <= N; i++){
+        cin >> d[i];
+    }
+
+    ll lo = 1, hi = N, ans = 0;
+    while (lo <= hi){
+        ll mid = lo + (hi - lo) / 2;
+        if (P(mid)){
+            ans = mid; 
+            hi = mid - 1;
+        }
+        else {
+            lo = mid + 1;
+        }
+    }
+    
+    cout << ans << endl;
     
     return 0;
 }
