@@ -18,7 +18,7 @@ Topics included:
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
 
 4. Graphs:
-    * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(E, Bipartiteness check)
+    * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(E, Bipartiteness check), USACO/668(E)
     * FloodFill: SPOJ/UCV2013H(E), SPOJ/BCLKCOUN(E)
 
 5. Dynamic Programming
