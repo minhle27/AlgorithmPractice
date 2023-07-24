@@ -21,7 +21,7 @@ Topics included:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(E, Bipartiteness check), USACO/668(E)
     * FloodFill: SPOJ/UCV2013H(E), SPOJ/BCLKCOUN(E)
 
-5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E)
+5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M)
 
 7. String:
     * KMP:
