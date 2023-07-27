@@ -8,7 +8,7 @@ Topics included:
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M)
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M)
     * Complete Search: CF/863B(M, Greedy), USACO/963(M)
-    * Backtracking: CSES/1623(E)
+    * Backtracking: CSES/1623(E), CF/1097B(E)
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
@@ -28,3 +28,5 @@ Topics included:
     * Trie:
 
 8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M)
+
+7. Bit Manipulations: CF/1097B(E)
