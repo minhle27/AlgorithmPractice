@@ -19,7 +19,7 @@ Topics included:
 
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(E, Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E)
-    * FloodFill: SPOJ/UCV2013H(E), SPOJ/BCLKCOUN(E)
+    * FloodFill: SPOJ/UCV2013H(E), SPOJ/BCLKCOUN(E), USACO/895(E)
 
 5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E)
 
