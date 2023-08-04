@@ -38,6 +38,13 @@ tcT> bool ckmax(T& a, const T& b) {
 ll cdiv(ll a, ll b) { return a/b+((a^b)>0&&a%b); } // divide a by b rounded up
 ll fdiv(ll a, ll b) { return a/b-((a^b)<0&&a%b); } // divide a by b rounded down
 
+// bitwise ops
+constexpr int pct(int x) { return __builtin_popcount(x); } // # of bits set
+constexpr int bits(int x) { // assert(x >= 0); 
+	return x == 0 ? 0 : 31-__builtin_clz(x); } // floor(log2(x)) 
+constexpr int p2(int x) { return 1<<x; }
+constexpr int msk2(int x) { return p2(x)-1; }
+
 int main()
 {
     ios_base::sync_with_stdio(false);
