@@ -25,11 +25,28 @@ typedef tuple<int, int, int> iii;
 #define PR(a,n) { cout << #a << " = "; FOR(_,1,n) cout << a[_] << ' '; cout << endl; }
 #define PR0(a,n) { cout << #a << " = "; REP(_,n) cout << a[_] << ' '; cout << endl; }
 
+int n;
+vi a;
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
+
+    cin >> n;
+    a.resize(n + 1);
+    for (int i = 1; i < n; i++) {
+        cin >> a[i];
+    }
+
+    vi dp(n + 10);
+    dp[1] = 0; dp[2] = a[1]; dp[3] = a[1] + a[2];
+    for (int i = 4; i <= n; i++){
+        dp[i] = dp[i - 1] + a[i - 1];
+        dp[i] = min(dp[i], dp[i - 2] + a[i - 1]);
+    }
+
+    cout << dp[n] << endl;
 
     
     return 0;
