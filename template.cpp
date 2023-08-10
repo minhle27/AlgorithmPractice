@@ -87,12 +87,17 @@ template<size_t i, class T> ostream& print_tuple_utils(ostream& out, const T& tu
 template<class ...U> print_op(tuple<U...>) {
     return print_tuple_utils<0, tuple<U...>>(out, u);
 }
+// g++ -std=c++17 -O2 -DLOCAL_DEBUG name.cpp -o name -Wall
+// g++ -std=c++17 -O2 name.cpp -o name -Wall
+
 // ACTUAL SOLUTION START HERE ////////////////////////////////////////////////////////////////
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
+
+    // freopen("debug.log", "w", stderr);
 
 
     
