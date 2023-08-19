@@ -91,6 +91,20 @@ template<class ...U> print_op(tuple<U...>) {
 // g++ -std=c++17 -O2 name.cpp -o name -Wall
 
 // ACTUAL SOLUTION START HERE ////////////////////////////////////////////////////////////////
+int n;
+const int maxn = 2 * 1e5 + 7;
+
+int res[maxn] = {0};
+vi g[maxn];
+
+void dfs(int s, int e) {
+    res[s] = 1;
+    for (auto u : g[s]) {
+        if (u == e) continue;
+        dfs(u, s);
+        res[s] += res[u];
+    }
+}
 
 int main()
 {
@@ -98,8 +112,17 @@ int main()
     cin.tie(nullptr);
 
     // freopen("debug.log", "w", stderr);
+    cin >> n;
+    for (int i = 2; i <= n; i++) {
+        int boss; cin >> boss;
+        g[boss].PB(i);
+    }
 
+    dfs(1, 0);
 
+    for (int i = 1; i <= n; i++) {
+        cout << res[i] - 1 << " ";
+    }
     
     return 0;
 }
