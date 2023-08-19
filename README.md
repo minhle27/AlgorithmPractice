@@ -33,4 +33,4 @@ Topics included:
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
 
-10. Tree Algorithms: CSES/1674
+10. Tree Algorithms: CSES/1674, CSES/1131
