@@ -23,7 +23,7 @@ Topics included:
     * Shortest Path: CSES/1667(E, BFS)
 
 5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E)
-    * Bitmask DP: CSES/1690
+    * Bitmask DP: CSES/1690, VNOI/lem3
 
 7. String:
     * KMP:

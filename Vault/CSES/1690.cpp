@@ -111,8 +111,9 @@ int main()
 
     dp[1][1] = 1;
     for (int mask = 2; mask < (1<<n); mask++) {
+        if ((mask & (1 << 0)) == 0) continue;
         if((mask&(1<<(n-1))) && mask != ((1<<n) - 1)) continue;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 2; i <= n; i++) {
             if ((mask&(1<<(i - 1))) == 0) continue;
             for (int v : g[i]) {
                 if (mask&(1<<(v - 1))) {
