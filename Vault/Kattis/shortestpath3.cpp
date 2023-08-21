@@ -89,6 +89,37 @@ template<class ...U> print_op(tuple<U...>) {
 // g++ -std=c++17 -O2 name.cpp -o name -Wall
 
 // ACTUAL SOLUTION START HERE ////////////////////////////////////////////////////////////////
+struct Edge {
+    int u, v, w;
+};
+
+int n, m, q, s;
+const int INF = 1e9 + 7;
+
+void bellmanFord(vector<Edge>& edges, vi& d, int s) {
+    d[s] = 0;
+    for (int i = 1; i < n; i++) {
+        for (auto e : edges) {
+            int u = e.u;
+            int v = e.v;
+            int w = e.w;
+            if (d[u] != INF && d[u] + w < d[v]) {
+                d[v] = d[u] + w;
+            }
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        for (auto e : edges) {
+            int u = e.u;
+            int v = e.v;
+            int w = e.w;
+            if (d[u] != INF && d[u] + w < d[v]) {
+                d[v] = -INF;
+            }
+        }
+    }
+}
 
 int main()
 {
@@ -96,7 +127,27 @@ int main()
     cin.tie(nullptr);
 
     // freopen("debug.log", "w", stderr);
+    while (true) {
+        cin >> n >> m >> q >> s;
+        if (n == 0 && m == 0 && q == 0 && s == 0) break;
 
+        vector<Edge> edges(m + 7);
+        vi d(n + 7, INF);
+        
+        for (int i = 0; i < m; i++) {
+            cin >> edges[i].u >> edges[i].v >> edges[i].w;    
+        }
+
+        bellmanFord(edges, d, s);
+
+        for (int i = 0; i < q; i++) {
+            int t; cin >> t;
+            if (d[t] == INF) cout << "Impossible" << endl;
+            else if (d[t] == -INF) cout << "-Infinity" << endl;
+            else cout << d[t] << endl;
+        }
+        cout << endl;
+    }
 
     
     return 0;
