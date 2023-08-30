@@ -14,6 +14,7 @@ Topics included:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M)
     * Heap(PQ):  USACO/690(M)
+    * DSU: CSES/1676
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
 
