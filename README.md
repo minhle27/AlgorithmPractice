@@ -23,14 +23,14 @@ Topics included:
     * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895
     * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743
 
-5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E), LC/221, UVA/11450, UVA/507, LC/740
+5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E), LC/221, UVA/11450, UVA/507, LC/740(house robber variation)
     * Bitmask DP: CSES/1690, VNOI/lem3, AC/dp_o
 
 7. String:
     * KMP:
     * Trie:
 
-8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E)
+8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
 
