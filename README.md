@@ -15,7 +15,7 @@ Topics included:
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M)
     * Heap(PQ):  USACO/690(M)
     * DSU: CSES/1676, LC/128
-    * Segment trees: CSES/1649, CSES/1648
+    * Segment trees: CSES/1649, CSES/1648, CF/273169C
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
 
