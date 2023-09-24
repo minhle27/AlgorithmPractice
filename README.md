@@ -30,7 +30,7 @@ Topics included:
 
 7. String:
     * KMP:
-    * Trie:
+    * Trie: SPOJ/ADAINDEX
 
 8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572
 
