@@ -12,7 +12,7 @@ Topics included:
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
-    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M)
+    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831
     * Heap(PQ):  USACO/690(M)
     * DSU: CSES/1676, LC/128
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C

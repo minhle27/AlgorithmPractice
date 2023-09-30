@@ -10,7 +10,8 @@
         "algorithm": "cpp",
         "ios": "cpp",
         "ostream": "cpp",
-        "locale": "cpp"
+        "locale": "cpp",
+        "set": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
