@@ -17,9 +17,9 @@ def count_files_in_vault(vault_folder):
         if os.path.isdir(folder_path):
             file_count = count_files(folder_path)
             total_count += file_count
-            table += f"{dir} : {file_count} \n"
+            table += f"* {dir} : {file_count} \n"
 
-    total = f"Total number of problems: {total_count}"
+    total = f"* Total number of problems: {total_count}"
     table += total
     return table
 

@@ -42,19 +42,19 @@ Topics included:
 
 ## STAT
 
-CodeChef : 1 
-CSES : 34 
-Codeforces : 15 
-Leetcode : 8 
-HackerEarth : 1 
-OJ.uz : 0 
-HackerRank : 0 
-SPOJ : 7 
-LQDOJ : 1 
-UVA : 4 
-USACO : 22 
-AtCoder : 6 
-csacademy : 1 
-Kattis : 6 
-VNOJ : 6 
-Total number of problems: 112
+* CodeChef : 1 
+* CSES : 34 
+* Codeforces : 15 
+* Leetcode : 8 
+* HackerEarth : 1 
+* OJ.uz : 0 
+* HackerRank : 0 
+* SPOJ : 7 
+* LQDOJ : 1 
+* UVA : 4 
+* USACO : 22 
+* AtCoder : 6 
+* csacademy : 1 
+* Kattis : 6 
+* VNOJ : 6 
+* Total number of problems: 112
