@@ -11,7 +11,11 @@
         "ios": "cpp",
         "ostream": "cpp",
         "locale": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "iosfwd": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
