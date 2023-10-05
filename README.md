@@ -15,7 +15,7 @@ Topics included:
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667
     * Heap(PQ):  USACO/690(M)
     * DSU: CSES/1676, LC/128
-    * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C
+    * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss
     * Fenwick trees: csa/swap_pairing
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
@@ -56,5 +56,5 @@ Topics included:
 * AtCoder : 6 
 * csacademy : 1 
 * Kattis : 6 
-* VNOJ : 6 
-* Total number of problems: 113
+* VNOJ : 7 
+* Total number of problems: 114

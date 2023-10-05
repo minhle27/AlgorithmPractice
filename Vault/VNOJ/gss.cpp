@@ -90,6 +90,52 @@ template<class ...U> print_op(tuple<U...>) {
 // g++ -std=c++17 -O2 name.cpp -o name -Wall
 
 // ACTUAL SOLUTION START HERE ////////////////////////////////////////////////////////////////
+int n, m;
+const int maxn = 5e4 + 7;
+const int inf = 1e9 + 7;
+int a[maxn];
+
+struct node {
+    int pre, suf, sum, maxsum;
+
+    static node merge(const node& a, const node& b) {
+        node res;
+        res.pre = max(a.pre, a.sum + b.pre);
+        res.suf = max(b.suf, b.sum + a.suf);
+        res.sum = a.sum + b.sum;
+        res.maxsum = max({a.maxsum, b.maxsum, a.suf + b.pre});
+        return res;
+    }
+
+    static node base() {
+        return { -inf, -inf, 0, -inf };
+    }
+    
+};
+
+node st[4 * maxn];
+
+void build(int id, int l, int r) {
+    if (l == r) {
+        st[id] = { a[l], a[l], a[l], a[l] };
+        return;
+    }
+
+    int mid = (l + r) >> 1;
+    build(2 * id, l, mid);
+    build(2 * id + 1, mid + 1, r);
+    st[id] = node::merge(st[2 * id], st[2 * id + 1]); 
+}
+
+node get(int id, int l, int r, int u, int v) {
+    if (l > v || r < u) return node::base();
+    if (l >= u && r <= v) return st[id];
+
+    int mid = (l + r) >> 1;
+    node g1 = get(2 * id, l, mid, u, v);
+    node g2 = get(2 * id + 1, mid + 1, r, u, v);
+    return node::merge(g1, g2);
+}
 
 int main()
 {
@@ -97,8 +143,19 @@ int main()
     cin.tie(nullptr);
 
     // freopen("debug.log", "w", stderr);
+    cin >> n;
+    
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+    }
+    build(1, 1, n);
 
-
+    cin >> m;
+    while(m--) {
+        int x, y;
+        cin >> x >> y;
+        cout << get(1, 1, n, x, y).maxsum << endl;
+    }
     
     return 0;
 }
