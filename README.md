@@ -12,7 +12,7 @@ Topics included:
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
-    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667
+    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163
     * Heap(PQ):  USACO/690(M)
     * DSU: CSES/1676, LC/128
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss
@@ -43,7 +43,7 @@ Topics included:
 ## STAT
 
 * CodeChef : 1 
-* CSES : 34 
+* CSES : 35 
 * Codeforces : 15 
 * Leetcode : 8 
 * HackerEarth : 1 
@@ -57,4 +57,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 7 
-* Total number of problems: 114
+* Total number of problems: 115
