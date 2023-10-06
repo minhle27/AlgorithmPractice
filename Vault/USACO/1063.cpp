@@ -90,6 +90,27 @@ template<class ...U> print_op(tuple<U...>) {
 // g++ -std=c++17 -O2 name.cpp -o name -Wall
 
 // ACTUAL SOLUTION START HERE ////////////////////////////////////////////////////////////////
+int N;
+const int maxn = 2507;
+vector<pi> points(maxn);
+bool ycmp(const pi& p, const pi& q) { return p.second < q.second; }
+vector<vi> pref;
+
+vector<vi> buildPref(vector<pi>& points) {
+    vector<vi> pref(maxn, vi(maxn, 0));
+    for (int i = 0; i < N; i++) pref[points[i].first][points[i].second] = 1;
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= N; j++) {
+            pref[i][j] += pref[i - 1][j] + pref[i][j - 1] - pref[i - 1][j - 1];
+        }
+    }
+    return pref;
+}
+
+// find num of cows in region enclosed by two horizontal sides y1, y2 and two vertical sides x1, x2
+int rsum(int x1, int y1, int x2, int y2) {
+  return pref[x2+1][y2+1] - pref[x2+1][y1] - pref[x1][y2+1] + pref[x1][y1];
+}
 
 int main()
 {
@@ -97,8 +118,31 @@ int main()
     cin.tie(nullptr);
 
     // freopen("debug.log", "w", stderr);
+    cin >> N;
+    for (int i = 0; i < N; i++) {
+        int x, y;
+        cin >> x >> y;
+        points[i] = MP(x, y);
+    }
 
+    // coordinate compression
+    sort(points.begin(), points.begin() + N);
+    for (int i = 0; i < N; i++) points[i].first = i + 1;
+    sort(points.begin(), points.begin() + N, ycmp);
+    for (int i = 0; i < N; i++) points[i].second = i + 1;
 
-    
+    // build 2d pref to count how many cows in a certain region
+    pref = buildPref(points);
+
+    ll res = 0;
+    for (int i = 0; i < N; i++) {
+        for (int j = i; j < N; j++) {
+            int x1 = min(points[i].first, points[j].first) - 1;
+            int x2 = max(points[i].first, points[j].first) - 1;
+            res += rsum(0, i, x1, j) * rsum(x2, i, N - 1, j);
+        }
+    }
+    cout << res + 1 << endl;
+
     return 0;
 }
