@@ -34,6 +34,7 @@ Topics included:
     * Trie: SPOJ/ADAINDEX
 
 8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572
+    * 2D pref: CSES/1652
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
 
@@ -43,7 +44,7 @@ Topics included:
 ## STAT
 
 * CodeChef : 1 
-* CSES : 35 
+* CSES : 36 
 * Codeforces : 15 
 * Leetcode : 8 
 * HackerEarth : 1 
@@ -57,4 +58,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 8 
-* Total number of problems: 116
+* Total number of problems: 117
