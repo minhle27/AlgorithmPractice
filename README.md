@@ -43,10 +43,13 @@ Topics included:
 
 11. Geometry: CF/100168L, CF/100168D, CF/100168F, CF/100168G, CF/100168I, CF/100168H
 
+12. Math: 
+    * Divisibility: CSES/1713
+
 ## STAT
 
 * CodeChef : 1 
-* CSES : 36 
+* CSES : 37 
 * Codeforces : 21 
 * Leetcode : 9 
 * HackerEarth : 1 
@@ -60,4 +63,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 126
+* Total number of problems: 127
