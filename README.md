@@ -17,6 +17,7 @@ Topics included:
     * DSU: CSES/1676, LC/128, VNOJ/colquery
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
     * Fenwick trees: csa/swap_pairing
+    * Indexed set: SPOJ/INVCNT
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
 
@@ -59,7 +60,7 @@ Topics included:
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 0 
-* SPOJ : 7 
+* SPOJ : 8 
 * LQDOJ : 1 
 * UVA : 5 
 * USACO : 24 
@@ -67,4 +68,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 131
+* Total number of problems: 132
