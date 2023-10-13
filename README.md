@@ -43,7 +43,7 @@ Topics included:
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
 
-10. Tree Algorithms: CSES/1674, USACO/968
+10. Tree Algorithms: CSES/1674, USACO/968, USACO/788
     * Tree diameter: CSES/1131, CSES/1132, CF/755C
 
 11. Geometry: CF/100168L, CF/100168D, CF/100168F, CF/100168G, CF/100168I, CF/100168H
@@ -63,9 +63,9 @@ Topics included:
 * SPOJ : 8 
 * LQDOJ : 1 
 * UVA : 5 
-* USACO : 24 
+* USACO : 25 
 * AtCoder : 6 
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 132
+* Total number of problems: 133
