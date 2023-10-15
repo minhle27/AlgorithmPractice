@@ -53,10 +53,13 @@ Topics included:
 12. Math: 
     * Divisibility: CSES/1713
 
+13. Others:
+    * Small to Large merging: CSES/1139
+
 ## STAT
 
 * CodeChef : 1 
-* CSES : 43 
+* CSES : 44 
 * Codeforces : 21 
 * Leetcode : 9 
 * HackerEarth : 1 
@@ -70,4 +73,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 136
+* Total number of problems: 137
