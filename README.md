@@ -46,6 +46,7 @@ Topics included:
 10. Tree Algorithms: CSES/1674, USACO/968, USACO/788
     * Tree diameter: CSES/1131, CSES/1132, CF/755C
     * Euler Tour: CSES/1137
+    * LCA: CSES/1688
 
 11. Geometry: CF/100168L, CF/100168D, CF/100168F, CF/100168G, CF/100168I, CF/100168H
 
@@ -55,7 +56,7 @@ Topics included:
 ## STAT
 
 * CodeChef : 1 
-* CSES : 41 
+* CSES : 42 
 * Codeforces : 21 
 * Leetcode : 9 
 * HackerEarth : 1 
@@ -69,4 +70,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 134
+* Total number of problems: 135
