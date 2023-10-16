@@ -18,6 +18,7 @@ Topics included:
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
     * Fenwick trees: csa/swap_pairing
     * Indexed set: SPOJ/INVCNT
+    * Sparse Table: CSES/1647
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
 
@@ -59,7 +60,7 @@ Topics included:
 ## STAT
 
 * CodeChef : 1 
-* CSES : 44 
+* CSES : 45 
 * Codeforces : 21 
 * Leetcode : 9 
 * HackerEarth : 1 
@@ -73,4 +74,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 137
+* Total number of problems: 138
