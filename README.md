@@ -43,6 +43,7 @@ Topics included:
     * 2D pref: CSES/1652, USACO/1063
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
+    * Bit optimization: 
 
 10. Tree Algorithms: CSES/1674, USACO/968, USACO/788
     * Tree diameter: CSES/1131, CSES/1132, CF/755C
@@ -52,7 +53,7 @@ Topics included:
 11. Geometry: CF/100168L, CF/100168D, CF/100168F, CF/100168G, CF/100168I, CF/100168H, CSES/2191
 
 12. Math: 
-    * Divisibility: CSES/1713
+    * Divisibility: CSES/1713, LC/1492
     * Modular Arithmetic: CSES/1095
     * Combinatorics: CSES/1079
 
@@ -64,7 +65,7 @@ Topics included:
 * CodeChef : 1 
 * CSES : 48 
 * Codeforces : 21 
-* Leetcode : 9 
+* Leetcode : 10 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 0 
@@ -76,4 +77,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 142
+* Total number of problems: 143
