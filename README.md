@@ -54,7 +54,7 @@ Topics included:
 
 12. Math: 
     * Divisibility: CSES/1713, LC/1492
-    * Modular Arithmetic: CSES/1095
+    * Modular Arithmetic: CSES/1095, CSES/1712
     * Combinatorics: CSES/1079
 
 13. Others:
@@ -63,7 +63,7 @@ Topics included:
 ## STAT
 
 * CodeChef : 1 
-* CSES : 48 
+* CSES : 49 
 * Codeforces : 21 
 * Leetcode : 10 
 * HackerEarth : 1 
@@ -77,4 +77,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 143
+* Total number of problems: 144
