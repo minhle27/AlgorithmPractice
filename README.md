@@ -56,6 +56,7 @@ Topics included:
     * Divisibility: CSES/1713, LC/1492
     * Modular Arithmetic: CSES/1095, CSES/1712
     * Combinatorics: CSES/1079
+    * Other: CF/515B
 
 13. Others:
     * Small to Large merging: CSES/1139
@@ -64,7 +65,7 @@ Topics included:
 
 * CodeChef : 1 
 * CSES : 49 
-* Codeforces : 21 
+* Codeforces : 22 
 * Leetcode : 10 
 * HackerEarth : 1 
 * OJ.uz : 0 
@@ -77,4 +78,4 @@ Topics included:
 * csacademy : 1 
 * Kattis : 6 
 * VNOJ : 9 
-* Total number of problems: 144
+* Total number of problems: 145
