@@ -76,6 +76,7 @@ Topics included:
 * USACO : 25 
 * AtCoder : 7 
 * csacademy : 1 
-* Kattis : 10 
+* Kattis : 11 
+* Contest : 0 
 * VNOJ : 9 
-* Total number of problems: 151
+* Total number of problems: 152
