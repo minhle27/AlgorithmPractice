@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "vector": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "queue": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp"
     }
 }

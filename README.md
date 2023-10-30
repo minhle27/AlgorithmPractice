@@ -65,7 +65,7 @@ Topics included:
 
 * CodeChef : 1 
 * CSES : 49 
-* Codeforces : 22 
+* Codeforces : 24 
 * Leetcode : 10 
 * HackerEarth : 1 
 * OJ.uz : 0 
@@ -76,6 +76,6 @@ Topics included:
 * USACO : 25 
 * AtCoder : 7 
 * csacademy : 1 
-* Kattis : 6 
+* Kattis : 10 
 * VNOJ : 9 
-* Total number of problems: 145
+* Total number of problems: 151
