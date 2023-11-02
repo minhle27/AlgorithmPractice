@@ -65,7 +65,7 @@ Topics included:
 
 * CodeChef : 1 
 * CSES : 49 
-* Codeforces : 24 
+* Codeforces : 25 
 * Leetcode : 10 
 * HackerEarth : 1 
 * OJ.uz : 0 
@@ -80,4 +80,4 @@ Topics included:
 * Kattis : 12 
 * Contest : 0 
 * VNOJ : 9 
-* Total number of problems: 154
+* Total number of problems: 155
