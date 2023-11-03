@@ -78,6 +78,6 @@ Topics included:
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 12 
-* Contest : 0 
+* Contest : 3 
 * VNOJ : 9 
-* Total number of problems: 156
+* Total number of problems: 159
