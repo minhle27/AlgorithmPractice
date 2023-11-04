@@ -39,7 +39,7 @@ Topics included(Some problems may not be listed here):
     * KMP:
     * Trie: SPOJ/ADAINDEX
 
-8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572
+8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion
     * 2D pref: CSES/1652, USACO/1063
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
@@ -77,7 +77,7 @@ Topics included(Some problems may not be listed here):
 * USACO : 26 
 * AtCoder : 7 
 * csacademy : 1 
-* Kattis : 12 
+* Kattis : 13 
 * Contest : 3 
 * VNOJ : 9 
-* Total number of problems: 165
+* Total number of problems: 166
