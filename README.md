@@ -1,8 +1,8 @@
 # Data Structures and Algorithms Practice
 ## Introduction
-This repository contains my solutions to algorithmic problems. Main languages are C++ (sometimes python). 
-Difficulty Level: M (medium), H (hard), E (easy)
-Topics included:
+This repository contains my solutions to algorithmic problems. Main language is C++ 
+
+Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval)
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss       
@@ -14,7 +14,7 @@ Topics included:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B
     * Heap(PQ):  USACO/690(M)
-    * DSU: CSES/1676, LC/128, VNOJ/colquery
+    * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
     * Fenwick trees: csa/swap_pairing
     * Indexed set: SPOJ/INVCNT
@@ -74,10 +74,10 @@ Topics included:
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 6 
-* USACO : 25 
+* USACO : 26 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 12 
 * Contest : 3 
 * VNOJ : 9 
-* Total number of problems: 164
+* Total number of problems: 165
