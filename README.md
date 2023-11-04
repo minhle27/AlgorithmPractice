@@ -54,7 +54,7 @@ Topics included:
 
 12. Math: 
     * Divisibility: CSES/1713, LC/1492
-    * Modular Arithmetic: CSES/1095, CSES/1712
+    * Modular Arithmetic: CSES/1095, CSES/1712, UVA/10489
     * Combinatorics: CSES/1079
     * Other: CF/515B
 
@@ -73,11 +73,11 @@ Topics included:
 * SPOJ : 9 
 * LQDOJ : 1 
 * vjudge : 1 
-* UVA : 5 
+* UVA : 6 
 * USACO : 25 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 12 
 * Contest : 3 
 * VNOJ : 9 
-* Total number of problems: 162
+* Total number of problems: 163
