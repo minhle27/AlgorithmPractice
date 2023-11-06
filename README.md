@@ -20,7 +20,7 @@ Topics included(Some problems may not be listed here):
     * Indexed set: SPOJ/INVCNT
     * Sparse Table: CSES/1647
 
-3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting)
+3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11
 
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C
@@ -66,7 +66,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 1 
 * CSES : 50 
 * Codeforces : 27 
-* Leetcode : 10 
+* Leetcode : 11 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -80,4 +80,4 @@ Topics included(Some problems may not be listed here):
 * Kattis : 13 
 * Contest : 3 
 * VNOJ : 9 
-* Total number of problems: 166
+* Total number of problems: 167
