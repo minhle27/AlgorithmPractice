@@ -90,6 +90,20 @@ template<class ...U> print_op(tuple<U...>) {
 // g++ -std=c++17 -O2 name.cpp -o name -Wall
 
 // ACTUAL SOLUTION START HERE ////////////////////////////////////////////////////////////////
+const int maxn = 1e5 + 7;
+vl dx_w(maxn, 0), dy_w(maxn, 0);
+int x_1, y_1, x_2, y_2, n;
+string s;
+
+bool ok(ll days) {
+    ll cyc = fdiv(days, n);
+    ll rem = days % n;
+    ll dx = dx_w[n] * cyc + dx_w[rem];
+    ll dy = dy_w[n] * cyc + dy_w[rem];
+    ll x_3 = x_1 + dx;
+    ll y_3 = y_1 + dy;
+    return abs(x_2 - x_3) + abs(y_2 - y_3) <= days;
+}
 
 int main()
 {
@@ -97,8 +111,32 @@ int main()
     cin.tie(nullptr);
 
     // freopen("debug.log", "w", stderr);
+    cin >> x_1 >> y_1 >> x_2 >> y_2 >> n >> s;
 
+    for (int i = 0; i < n; i++) {
+        if (s[i] == 'U') dy_w[i + 1] = 1;
+        if (s[i] == 'D') dy_w[i + 1] = -1;
+        if (s[i] == 'L') dx_w[i + 1] = -1; 
+        if (s[i] == 'R') dx_w[i + 1] = 1; 
+    }
+    for (int i = 2; i <= n; i++) {
+        dx_w[i] += dx_w[i - 1];
+        dy_w[i] += dy_w[i - 1];
+    }
+   
+    ll lo = 0, hi = 2 * 1e14 + 7;
+    while (lo < hi) {
+        ll mid = lo + (hi - lo) / 2;
+        if (ok(mid)) hi = mid;
+        else lo = mid + 1;
+    }
 
+    if (!ok(lo)) {
+        cout << -1 << endl;
+    }
+    else {
+        cout << lo << endl;
+    }
     
     return 0;
 }
