@@ -31,7 +31,7 @@ Topics included(Some problems may not be listed here):
     * Topo Sort: CSES/1679
     * Cycle Check: CSES/1678, DMOJ/acsl1p4
 
-5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E), LC/221, UVA/11450, UVA/507, LC/740(house robber variation), LC/983, UVA/108 (Kadane on 2D), kattis/commercials (Kadane on 1D), AC/dp_i, CSES/1145, UVA/10130, LC/714, AtCoder/dp_k, SPOJ/COINS
+5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E), LC/221, UVA/11450, UVA/507, LC/740(house robber variation), LC/983, UVA/108 (Kadane on 2D), kattis/commercials (Kadane on 1D), AC/dp_i, CSES/1145, UVA/10130, LC/714, AtCoder/dp_k, SPOJ/COINS, LC/313
     * Bitmask DP: CSES/1690, VNOI/lem3, AC/dp_o
     * DP on DAG: CSES/1680
     * 0-1 Knapsack: LC/474
@@ -67,7 +67,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 1 
 * CSES : 50 
 * Codeforces : 27 
-* Leetcode : 12 
+* Leetcode : 13 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -82,4 +82,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 3 
 * DMOJ : 1 
 * VNOJ : 9 
-* Total number of problems: 169
+* Total number of problems: 170
