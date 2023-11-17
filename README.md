@@ -31,7 +31,7 @@ Topics included(Some problems may not be listed here):
     * Topo Sort: CSES/1679
     * Cycle Check: CSES/1678, DMOJ/acsl1p4, LC/207
 
-5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E), LC/221, UVA/11450, UVA/507, LC/740(house robber variation), LC/983, UVA/108 (Kadane on 2D), kattis/commercials (Kadane on 1D), AC/dp_i, CSES/1145, UVA/10130, LC/714, AtCoder/dp_k, SPOJ/COINS, LC/313
+5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E), LC/221, UVA/11450, UVA/507, LC/740(house robber variation), LC/983, UVA/108 (Kadane on 2D), kattis/commercials (Kadane on 1D), AC/dp_i, CSES/1145, UVA/10130, LC/714, AtCoder/dp_k, SPOJ/COINS, LC/313, CF/909C
     * Bitmask DP: CSES/1690, VNOI/lem3, AC/dp_o
     * DP on DAG: CSES/1680
     * 0-1 Knapsack: LC/474
@@ -40,7 +40,7 @@ Topics included(Some problems may not be listed here):
     * KMP:
     * Trie: SPOJ/ADAINDEX
 
-8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion
+8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B
     * 2D pref: CSES/1652, USACO/1063
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
@@ -57,7 +57,7 @@ Topics included(Some problems may not be listed here):
     * Divisibility: CSES/1713, LC/1492
     * Modular Arithmetic: CSES/1095, CSES/1712, UVA/10489
     * Combinatorics: CSES/1079
-    * Other: CF/515B
+    * Other: CF/515B, CF/909D
 
 13. Others:
     * Small to Large merging: CSES/1139
@@ -79,7 +79,7 @@ Topics included(Some problems may not be listed here):
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
-* Contest : 3 
+* Contest : 8 
 * DMOJ : 1 
 * VNOJ : 9 
-* Total number of problems: 172
+* Total number of problems: 177
