@@ -19,7 +19,7 @@ Topics included(Some problems may not be listed here):
     * Fenwick trees: csa/swap_pairing
     * Indexed set: SPOJ/INVCNT
     * Sparse Table: CSES/1647
-    * Sliding Window: LC/239
+    * Sliding Window: LC/239, CSES/1141
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11
 
@@ -66,7 +66,7 @@ Topics included(Some problems may not be listed here):
 ## STAT
 
 * CodeChef : 1 
-* CSES : 50 
+* CSES : 51 
 * Codeforces : 28 
 * Leetcode : 15 
 * HackerEarth : 1 
@@ -83,4 +83,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 9 
-* Total number of problems: 178
+* Total number of problems: 179
