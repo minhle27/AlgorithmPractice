@@ -43,3 +43,40 @@ constexpr int bits(int x) { // assert(x >= 0);
 	return x == 0 ? 0 : 31-__builtin_clz(x); } // floor(log2(x)) 
 constexpr int p2(int x) { return 1<<x; }
 constexpr int msk2(int x) { return p2(x)-1; }
+
+class Solution {
+    vector<vi> g;
+    vector<char> color;
+    vi par;
+public:
+    bool dfs(int v) {
+        color[v] = 1;
+        for (int u : g[v]) {
+            if (color[u] == 0) {
+                par[u] = v;
+                if (dfs(u)) return true;
+            }
+            else if (color[u] == 1) return true;
+        }
+        color[v] = 2;
+        return false;
+    }
+
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        color.assign(numCourses, 0);
+        par.assign(numCourses, -1);
+        g.resize(numCourses);
+
+        for (auto edge : prerequisites){
+            int u = edge[0], v = edge[1];
+            g[v].PB(u);
+        }
+
+        for (int v = 0; v < numCourses; v++) {
+            if (color[v] == 0 && dfs(v)) {
+                return false;
+            }
+        }
+        return true;
+    }
+};
