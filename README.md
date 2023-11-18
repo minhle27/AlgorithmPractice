@@ -68,7 +68,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 1 
 * CSES : 51 
 * Codeforces : 28 
-* Leetcode : 15 
+* Leetcode : 16 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -83,4 +83,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 9 
-* Total number of problems: 179
+* Total number of problems: 180
