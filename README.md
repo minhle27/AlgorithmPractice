@@ -36,6 +36,7 @@ Topics included(Some problems may not be listed here):
     * Bitmask DP: CSES/1690, VNOI/lem3, AC/dp_o
     * DP on DAG: CSES/1680
     * 0-1 Knapsack: LC/474
+    * DP on string: LC/72
 
 7. String:
     * KMP:
@@ -68,7 +69,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 1 
 * CSES : 52 
 * Codeforces : 30 
-* Leetcode : 16 
+* Leetcode : 17 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -83,4 +84,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 9 
-* Total number of problems: 183
+* Total number of problems: 184
