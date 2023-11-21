@@ -5,7 +5,7 @@ This repository contains my solutions to algorithmic problems. Main language is 
 Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval)
-    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C       
+    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard       
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup
     * Complete Search: CF/863B, USACO/963(M), CF/574B
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77
@@ -83,5 +83,5 @@ Topics included(Some problems may not be listed here):
 * Kattis : 13 
 * Contest : 8 
 * DMOJ : 1 
-* VNOJ : 9 
-* Total number of problems: 184
+* VNOJ : 10 
+* Total number of problems: 185
