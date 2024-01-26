@@ -1,11 +1,11 @@
 # Data Structures and Algorithms Practice
 ## Introduction
-This repository contains my solutions to algorithmic problems. Main language is C++ 
+This repository contains my solutions to algorithmic problems. Main language is C++
 
 Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval)
-    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard       
+    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup
     * Complete Search: CF/863B, USACO/963(M), CF/574B
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77
@@ -27,7 +27,7 @@ Topics included(Some problems may not be listed here):
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C
     * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895
     * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743, SPOJ/MICEMAZE, SPOJ/TRAFFICN, CSES/1195, CSES/1193, CC/AUG18-REVERSE(0-1BFS)
-    * MST: CSES/1675, kattis/cats
+    * MST: CSES/1675, kattis/cats, UVA/10397 (mst variants)
     * Graph Two Coloring: UVA/10004
     * Topo Sort: CSES/1679
     * Cycle Check: CSES/1678, DMOJ/acsl1p4, LC/207
@@ -46,7 +46,7 @@ Topics included(Some problems may not be listed here):
     * 2D pref: CSES/1652, USACO/1063
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
-    * Bit optimization: 
+    * Bit optimization:
 
 10. Tree Algorithms: CSES/1674, USACO/968, USACO/788
     * Tree diameter: CSES/1131, CSES/1132, CF/755C
@@ -55,7 +55,7 @@ Topics included(Some problems may not be listed here):
 
 11. Geometry: CF/100168L, CF/100168D, CF/100168F, CF/100168G, CF/100168I, CF/100168H, CSES/2191
 
-12. Math: 
+12. Math:
     * Divisibility: CSES/1713, LC/1492
     * Modular Arithmetic: CSES/1095, CSES/1712, UVA/10489
     * Combinatorics: CSES/1079
@@ -66,22 +66,22 @@ Topics included(Some problems may not be listed here):
 ``````
 ## STAT
 
-* CodeChef : 1 
-* CSES : 52 
-* Codeforces : 30 
-* Leetcode : 17 
-* HackerEarth : 1 
-* OJ.uz : 0 
-* HackerRank : 1 
-* SPOJ : 9 
-* LQDOJ : 1 
-* vjudge : 1 
-* UVA : 6 
-* USACO : 26 
-* AtCoder : 7 
-* csacademy : 1 
-* Kattis : 13 
-* Contest : 8 
-* DMOJ : 1 
-* VNOJ : 10 
-* Total number of problems: 185
+* CodeChef : 1
+* CSES : 52
+* Codeforces : 30
+* Leetcode : 17
+* HackerEarth : 1
+* OJ.uz : 0
+* HackerRank : 1
+* SPOJ : 9
+* LQDOJ : 1
+* vjudge : 1
+* UVA : 7
+* USACO : 26
+* AtCoder : 7
+* csacademy : 1
+* Kattis : 13
+* Contest : 8
+* DMOJ : 1
+* VNOJ : 10
+* Total number of problems: 186
