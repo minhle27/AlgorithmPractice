@@ -59,6 +59,7 @@ Topics included(Some problems may not be listed here):
     * Divisibility: CSES/1713, LC/1492
     * Modular Arithmetic: CSES/1095, CSES/1712, UVA/10489
     * Combinatorics: CSES/1079
+    * Primes: LC/204
     * Other: CF/515B, CF/909D
 
 13. Others:
@@ -66,22 +67,22 @@ Topics included(Some problems may not be listed here):
 ``````
 ## STAT
 
-* CodeChef : 1
-* CSES : 52
-* Codeforces : 30
-* Leetcode : 18
-* HackerEarth : 1
-* OJ.uz : 0
-* HackerRank : 1
-* SPOJ : 9
-* LQDOJ : 1
-* vjudge : 1
-* UVA : 7
-* USACO : 26
-* AtCoder : 7
-* csacademy : 1
-* Kattis : 13
-* Contest : 8
-* DMOJ : 1
-* VNOJ : 10
-* Total number of problems: 187
+* CodeChef : 1 
+* CSES : 52 
+* Codeforces : 30 
+* Leetcode : 19 
+* HackerEarth : 1 
+* OJ.uz : 0 
+* HackerRank : 1 
+* SPOJ : 9 
+* LQDOJ : 1 
+* vjudge : 1 
+* UVA : 7 
+* USACO : 26 
+* AtCoder : 7 
+* csacademy : 1 
+* Kattis : 13 
+* Contest : 8 
+* DMOJ : 1 
+* VNOJ : 10 
+* Total number of problems: 188
