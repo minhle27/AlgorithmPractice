@@ -49,7 +49,7 @@ Topics included(Some problems may not be listed here):
     * Bit optimization:
 
 10. Tree Algorithms: CSES/1674, USACO/968, USACO/788
-    * Tree diameter: CSES/1131, CSES/1132, CF/755C
+    * Tree diameter: CSES/1131, CSES/1132, CF/755C, LC/310
     * Euler Tour: CSES/1137
     * LCA: CSES/1688, CSES/1135
 
@@ -70,7 +70,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 1 
 * CSES : 52 
 * Codeforces : 30 
-* Leetcode : 21 
+* Leetcode : 22 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -85,4 +85,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 10 
-* Total number of problems: 190
+* Total number of problems: 191
