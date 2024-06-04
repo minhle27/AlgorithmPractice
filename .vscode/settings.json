@@ -1,13 +1,15 @@
 {
-    "files.associations": {
-        "vector": "cpp",
-        "numeric": "cpp",
-        "ostream": "cpp",
-        "iostream": "cpp",
-        "queue": "cpp",
-        "iosfwd": "cpp",
-        "iterator": "cpp",
-        "map": "cpp",
-        "ios": "cpp"
-    }
+  "files.associations": {
+    "vector": "cpp",
+    "numeric": "cpp",
+    "ostream": "cpp",
+    "iostream": "cpp",
+    "queue": "cpp",
+    "iosfwd": "cpp",
+    "iterator": "cpp",
+    "map": "cpp",
+    "ios": "cpp",
+    "random": "cpp",
+    "algorithm": "cpp"
+  }
 }
