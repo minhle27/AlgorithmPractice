@@ -10,6 +10,8 @@
     "map": "cpp",
     "ios": "cpp",
     "random": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "stack": "cpp",
+    "filesystem": "cpp"
   }
 }
