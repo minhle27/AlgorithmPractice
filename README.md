@@ -24,7 +24,7 @@ Topics included(Some problems may not be listed here):
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard
 
 4. Graphs:
-    * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994
+    * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994, LC/542
     * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895
     * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743, SPOJ/MICEMAZE, SPOJ/TRAFFICN, CSES/1195, CSES/1193, CC/AUG18-REVERSE(0-1BFS)
     * MST: CSES/1675, kattis/cats, UVA/10397 (mst variants)
@@ -70,7 +70,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 1 
 * CSES : 52 
 * Codeforces : 30 
-* Leetcode : 27 
+* Leetcode : 28 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -85,4 +85,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 10 
-* Total number of problems: 196
+* Total number of problems: 197
