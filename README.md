@@ -12,6 +12,7 @@ Topics included(Some problems may not be listed here):
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301
     * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77
+        * Permutaion: LC/46
     * Simulation: USACO/891, USACO/855
 
 2. Data Structures:
@@ -74,7 +75,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 1 
 * CSES : 52 
 * Codeforces : 40 
-* Leetcode : 31 
+* Leetcode : 32 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -89,4 +90,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 215
+* Total number of problems: 216
