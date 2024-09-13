@@ -12,7 +12,7 @@ Topics included(Some problems may not be listed here):
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301
     * Complete Search: CF/863B, USACO/963(M), CF/574B
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77
-    * Simulation: USACO/891
+    * Simulation: USACO/891, USACO/855
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
@@ -82,11 +82,11 @@ Topics included(Some problems may not be listed here):
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 7 
-* USACO : 28 
+* USACO : 29 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 213
+* Total number of problems: 214
