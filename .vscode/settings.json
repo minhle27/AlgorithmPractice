@@ -12,6 +12,7 @@
     "random": "cpp",
     "algorithm": "cpp",
     "stack": "cpp",
-    "filesystem": "cpp"
+    "filesystem": "cpp",
+    "tuple": "cpp"
   }
 }
