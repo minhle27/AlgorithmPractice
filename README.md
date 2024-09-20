@@ -70,7 +70,7 @@ Topics included(Some problems may not be listed here):
 13. Others:
     * Small to Large merging: CSES/1139
 
-14. Ad Hoc: USACO/832
+14. Ad Hoc: USACO/832, USACO/915
 ``````
 ## STAT
 
