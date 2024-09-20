@@ -13,6 +13,22 @@
     "algorithm": "cpp",
     "stack": "cpp",
     "filesystem": "cpp",
-    "tuple": "cpp"
+    "tuple": "cpp",
+    "__hash_table": "cpp",
+    "__split_buffer": "cpp",
+    "__tree": "cpp",
+    "array": "cpp",
+    "bitset": "cpp",
+    "deque": "cpp",
+    "initializer_list": "cpp",
+    "list": "cpp",
+    "regex": "cpp",
+    "set": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "valarray": "cpp",
+    "utility": "cpp"
   }
 }
