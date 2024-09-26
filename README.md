@@ -72,7 +72,7 @@ Topics included(Some problems may not be listed here):
 
 14. Ad Hoc: USACO/832, USACO/915, USACO/894
 
-15. Rectangle Geometry: USACO/567
+15. Rectangle Geometry: USACO/567, USACO/759
 ``````
 ## STAT
 
@@ -87,11 +87,11 @@ Topics included(Some problems may not be listed here):
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 7 
-* USACO : 39 
+* USACO : 40 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 226
+* Total number of problems: 227
