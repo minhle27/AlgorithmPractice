@@ -70,7 +70,7 @@ Topics included(Some problems may not be listed here):
 13. Others:
     * Small to Large merging: CSES/1139
 
-14. Ad Hoc: USACO/832, USACO/915
+14. Ad Hoc: USACO/832, USACO/915, USACO/894
 ``````
 ## STAT
 
@@ -85,11 +85,11 @@ Topics included(Some problems may not be listed here):
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 7 
-* USACO : 37 
+* USACO : 38 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 224
+* Total number of problems: 225
