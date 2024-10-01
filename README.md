@@ -4,7 +4,7 @@ This repository contains my solutions to algorithmic problems. Main language is 
 
 Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
-    * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251
+    * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard, CF/283911A, CF/283911B, CF/283911C, CF/283911D, CF/283932A.cpp, CF/283932B
         * Minimax: CF/285083A, CF/285083B
         * Maximal Average: CF/285069A
@@ -48,7 +48,7 @@ Topics included(Some problems may not be listed here):
     * Trie: SPOJ/ADAINDEX
 
 8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53
-USACO/691
+USACO/691, USACO/787
     * 2D pref: CSES/1652, USACO/1063
     * Divisibility of subarray: LC/974
     * Difference Array (Inc/Dec Points): CF/816B, CF/295A, CF/102951D
@@ -79,22 +79,22 @@ USACO/691
 ``````
 ## STAT
 
-* CodeChef : 1 
-* CSES : 52 
-* Codeforces : 43 
-* Leetcode : 34 
-* HackerEarth : 1 
-* OJ.uz : 0 
-* HackerRank : 1 
-* SPOJ : 9 
-* LQDOJ : 1 
-* vjudge : 1 
-* UVA : 7 
-* USACO : 41 
-* AtCoder : 7 
-* csacademy : 1 
-* Kattis : 13 
-* Contest : 8 
-* DMOJ : 1 
-* VNOJ : 11 
+* CodeChef : 1
+* CSES : 52
+* Codeforces : 43
+* Leetcode : 34
+* HackerEarth : 1
+* OJ.uz : 0
+* HackerRank : 1
+* SPOJ : 9
+* LQDOJ : 1
+* vjudge : 1
+* UVA : 7
+* USACO : 41
+* AtCoder : 7
+* csacademy : 1
+* Kattis : 13
+* Contest : 8
+* DMOJ : 1
+* VNOJ : 11
 * Total number of problems: 232
