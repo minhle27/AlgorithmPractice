@@ -51,7 +51,7 @@ Topics included(Some problems may not be listed here):
 USACO/691
     * 2D pref: CSES/1652, USACO/1063
     * Divisibility of subarray: LC/974
-    * Difference Array (Inc/Dec Points): CF/816B, CF/295A
+    * Difference Array (Inc/Dec Points): CF/816B, CF/295A, CF/102951D
 
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
     * Bit optimization:
@@ -81,7 +81,7 @@ USACO/691
 
 * CodeChef : 1 
 * CSES : 52 
-* Codeforces : 42 
+* Codeforces : 43 
 * Leetcode : 34 
 * HackerEarth : 1 
 * OJ.uz : 0 
@@ -97,4 +97,4 @@ USACO/691
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 231
+* Total number of problems: 232
