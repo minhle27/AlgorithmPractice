@@ -10,7 +10,7 @@ Topics included(Some problems may not be listed here):
         * Minimax: CF/285083A, CF/285083B
         * Maximal Average: CF/285069A
         * Find the K-th Element: CF/285084A
-    * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301, USACO/689, CSES/1073
+    * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301, USACO/689, CSES/1073, CSES/1632
     * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77, LC/51 (NQueens), USACO/1276
         * Permutaion: LC/46
@@ -18,7 +18,7 @@ Topics included(Some problems may not be listed here):
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
-    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188
+    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632
     * Heap(PQ):  USACO/690(M)
     * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
@@ -81,7 +81,7 @@ USACO/691, USACO/787
 ## STAT
 
 * CodeChef : 1 
-* CSES : 55 
+* CSES : 56 
 * Codeforces : 53 
 * Leetcode : 34 
 * HackerEarth : 1 
@@ -98,4 +98,4 @@ USACO/691, USACO/787
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 246
+* Total number of problems: 247
