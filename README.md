@@ -6,7 +6,7 @@ Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787, CSES/1164, CSES/1074
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard, CF/283911A, CF/283911B, CF/283911C, CF/283911D, CF/283932A.cpp, CF/283932B,
-    CF/702C
+    CF/702C, USACO/594
         * Minimax: CF/285083A, CF/285083B
         * Maximal Average: CF/285069A
         * Find the K-th Element: CF/285084A
@@ -91,11 +91,11 @@ USACO/691, USACO/787
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 7 
-* USACO : 42 
+* USACO : 43 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 8 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 248
+* Total number of problems: 249
