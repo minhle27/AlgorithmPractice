@@ -17,7 +17,7 @@ Topics included(Some problems may not be listed here):
     * Simulation: USACO/891, USACO/855
 
 2. Data Structures:
-    * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN)
+    * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN), LC/20
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632
     * Heap(PQ):  USACO/690(M)
     * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305
@@ -81,22 +81,22 @@ USACO/691, USACO/787
 ``````
 ## STAT
 
-* CodeChef : 1 
-* CSES : 58 
-* Codeforces : 53 
-* Leetcode : 34 
-* HackerEarth : 1 
-* OJ.uz : 0 
-* HackerRank : 1 
-* SPOJ : 9 
-* LQDOJ : 1 
-* vjudge : 1 
-* UVA : 7 
-* USACO : 44 
-* AtCoder : 7 
-* csacademy : 1 
-* Kattis : 13 
-* Contest : 28 
-* DMOJ : 1 
-* VNOJ : 11 
-* Total number of problems: 271
+* CodeChef : 1
+* CSES : 58
+* Codeforces : 53
+* Leetcode : 35
+* HackerEarth : 1
+* OJ.uz : 0
+* HackerRank : 1
+* SPOJ : 9
+* LQDOJ : 1
+* vjudge : 1
+* UVA : 7
+* USACO : 44
+* AtCoder : 7
+* csacademy : 1
+* Kattis : 13
+* Contest : 28
+* DMOJ : 1
+* VNOJ : 11
+* Total number of problems: 272
