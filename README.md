@@ -31,7 +31,7 @@ Topics included(Some problems may not be listed here):
 
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994,
-    LC/542, USACO/644
+    LC/542, USACO/644, CSES/1682
     * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895
     * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743, SPOJ/MICEMAZE, SPOJ/TRAFFICN, CSES/1195, CSES/1193, CC/AUG18-REVERSE(0-1BFS)
     * MST: CSES/1675, kattis/cats, UVA/10397 (mst variants)
@@ -82,7 +82,7 @@ USACO/691, USACO/787
 ## STAT
 
 * CodeChef : 1 
-* CSES : 57 
+* CSES : 58 
 * Codeforces : 53 
 * Leetcode : 34 
 * HackerEarth : 1 
@@ -99,4 +99,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 270
+* Total number of problems: 271
