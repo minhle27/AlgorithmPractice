@@ -36,7 +36,7 @@ Topics included(Some problems may not be listed here):
     * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895
     * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743, SPOJ/MICEMAZE, SPOJ/TRAFFICN, CSES/1195, CSES/1193, CC/AUG18-REVERSE(0-1BFS)
     * MST: CSES/1675, kattis/cats, UVA/10397 (mst variants)
-    * Graph Two Coloring: UVA/10004
+    * Graph Two Coloring: UVA/10004, USACO/920
     * Topo Sort: CSES/1679, LC/2115
     * Cycle Check: CSES/1678, DMOJ/acsl1p4, LC/207
 
@@ -93,11 +93,11 @@ USACO/691, USACO/787
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 7 
-* USACO : 44 
+* USACO : 45 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 276
+* Total number of problems: 277
