@@ -19,6 +19,7 @@ Topics included(Some problems may not be listed here):
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN), LC/20, LC/150
         * Monotonic Stack: LC/496, SPOJ/SSAM219G, LC/85
+    * Queue: UVA/10901
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632
     * Heap(PQ):  USACO/690(M)
     * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305
@@ -92,7 +93,7 @@ USACO/691, USACO/787
 * SPOJ : 10 
 * LQDOJ : 1 
 * vjudge : 1 
-* UVA : 7 
+* UVA : 8 
 * USACO : 46 
 * AtCoder : 7 
 * csacademy : 1 
@@ -100,4 +101,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 278
+* Total number of problems: 279
