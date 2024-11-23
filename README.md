@@ -72,7 +72,7 @@ USACO/691, USACO/787
     * Modular Arithmetic: CSES/1095, CSES/1712, UVA/10489
     * Combinatorics: CSES/1079
     * Primes: LC/204
-    * Other: CF/515B, CF/909D
+    * Other: CF/515B, CF/909D, LC/202
 
 13. Others:
     * Small to Large merging: CSES/1139
@@ -86,7 +86,7 @@ USACO/691, USACO/787
 * CodeChef : 1 
 * CSES : 58 
 * Codeforces : 54 
-* Leetcode : 38 
+* Leetcode : 39 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -101,4 +101,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 280
+* Total number of problems: 281
