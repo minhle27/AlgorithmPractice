@@ -39,8 +39,8 @@ ll fdiv(ll a, ll b) { return a/b-((a^b)<0&&a%b); } // divide a by b rounded down
 
 // bitwise ops
 constexpr int pct(int x) { return __builtin_popcount(x); } // # of bits set
-constexpr int bits(int x) { // assert(x >= 0); 
-	return x == 0 ? 0 : 31-__builtin_clz(x); } // floor(log2(x)) 
+constexpr int bits(int x) { // assert(x >= 0);
+	return x == 0 ? 0 : 31-__builtin_clz(x); } // floor(log2(x))
 constexpr int p2(int x) { return 1<<x; }
 constexpr int msk2(int x) { return p2(x)-1; }
 
@@ -50,7 +50,7 @@ constexpr int msk2(int x) { return p2(x)-1; }
 #define db(val) "["#val" = "<<(val)<<"] "
 #define CONCAT_(x, y) x##y
 #define CONCAT(x, y) CONCAT_(x, y)
-#ifdef LOCAL_DEBUG   
+#ifdef LOCAL_DEBUG
 #   define clog cerr << setw(__db_level * 2) << setfill(' ') << "" << setw(0)
 #   define DB() debug_block CONCAT(dbbl, __LINE__)
     int __db_level = 0;
@@ -71,7 +71,7 @@ template<class U, class V> print_op(pair<U, V>) {
 // for printing collection
 template<class Con, class = decltype(begin(declval<Con>()))>
 typename enable_if<!is_same<Con, string>::value, ostream&>::type
-operator<<(ostream& out, const Con& con) { 
+operator<<(ostream& out, const Con& con) {
     out << "{";
     for (auto beg = con.begin(), it = beg; it != con.end(); ++it)
         out << (it == beg ? "" : ", ") << *it;
@@ -80,8 +80,8 @@ operator<<(ostream& out, const Con& con) {
 
 // for printing std::tuple
 template<size_t i, class T> ostream& print_tuple_utils(ostream& out, const T& tup) {
-    if constexpr(i == tuple_size<T>::value) return out << ")"; 
-    else return print_tuple_utils<i + 1, T>(out << (i ? ", " : "(") << get<i>(tup), tup); 
+    if constexpr(i == tuple_size<T>::value) return out << ")";
+    else return print_tuple_utils<i + 1, T>(out << (i ? ", " : "(") << get<i>(tup), tup);
 }
 template<class ...U> print_op(tuple<U...>) {
     return print_tuple_utils<0, tuple<U...>>(out, u);
@@ -98,7 +98,5 @@ int main()
 
     // freopen("debug.log", "w", stderr);
 
-
-    
     return 0;
 }

@@ -29,7 +29,7 @@ Topics included(Some problems may not be listed here):
     * Sparse Table: CSES/1647
     * Sliding Window: LC/239, CSES/1141, CSES/2428
 
-3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F
+3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C
 
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994,
@@ -85,7 +85,7 @@ USACO/691, USACO/787
 
 * CodeChef : 1 
 * CSES : 58 
-* Codeforces : 54 
+* Codeforces : 55 
 * Leetcode : 39 
 * HackerEarth : 1 
 * OJ.uz : 0 
@@ -101,4 +101,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 281
+* Total number of problems: 282
