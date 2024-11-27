@@ -5,7 +5,7 @@ This repository contains my solutions to algorithmic problems. Main language is 
 Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787, CSES/1164, CSES/1074
-    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard, CF/283911A, CF/283911B, CF/283911C, CF/283911D, CF/283932A.cpp, CF/283932B,
+    * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard, CF/283911A, CF/283911B, CF/283911C, CF/283911D, CF/283932A.cpp, CF/283932B, USACO/380
     CF/702C, USACO/594, USACO/992
         * Minimax: CF/285083A, CF/285083B
         * Maximal Average: CF/285069A
@@ -34,7 +34,7 @@ Topics included(Some problems may not be listed here):
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994,
     LC/542, USACO/644, CSES/1682, USACO/992
-    * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895
+    * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895, USACO/380
     * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743, SPOJ/MICEMAZE, SPOJ/TRAFFICN, CSES/1195, CSES/1193, CC/AUG18-REVERSE(0-1BFS)
     * MST: CSES/1675, kattis/cats, UVA/10397 (mst variants)
     * Graph Two Coloring: UVA/10004, USACO/920
@@ -94,11 +94,11 @@ USACO/691, USACO/787
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 8 
-* USACO : 46 
+* USACO : 47 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 282
+* Total number of problems: 283
