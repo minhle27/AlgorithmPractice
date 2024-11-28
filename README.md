@@ -81,7 +81,7 @@ USACO/691, USACO/787
 
 15. Rectangle Geometry: USACO/567, USACO/759
 
-16. Tree implementation with pointers: LC/226
+16. Trees: LC/226
 ``````
 ## STAT
 
