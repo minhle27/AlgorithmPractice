@@ -80,13 +80,15 @@ USACO/691, USACO/787
 14. Ad Hoc: USACO/832, USACO/915, USACO/894
 
 15. Rectangle Geometry: USACO/567, USACO/759
+
+16. Tree implementation with pointers: LC/226
 ``````
 ## STAT
 
 * CodeChef : 1 
 * CSES : 58 
 * Codeforces : 55 
-* Leetcode : 42 
+* Leetcode : 43 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -101,4 +103,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 286
+* Total number of problems: 287
