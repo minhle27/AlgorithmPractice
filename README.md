@@ -6,7 +6,7 @@ Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
     * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787, CSES/1164, CSES/1074
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard, CF/283911A, CF/283911B, CF/283911C, CF/283911D, CF/283932A.cpp, CF/283932B, USACO/380
-    CF/702C, USACO/594, USACO/992
+    CF/702C, USACO/594, USACO/992, LC/74
         * Minimax: CF/285083A, CF/285083B
         * Maximal Average: CF/285069A
         * Find the K-th Element: CF/285084A
@@ -86,7 +86,7 @@ USACO/691, USACO/787
 * CodeChef : 1 
 * CSES : 58 
 * Codeforces : 55 
-* Leetcode : 41 
+* Leetcode : 42 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -101,4 +101,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 285
+* Total number of problems: 286
