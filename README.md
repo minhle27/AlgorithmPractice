@@ -81,14 +81,14 @@ USACO/691, USACO/787
 
 15. Rectangle Geometry: USACO/567, USACO/759
 
-16. Trees: LC/226, LC/104, LC/543
+16. Trees: LC/226, LC/104, LC/543, LC/110
 ``````
 ## STAT
 
 * CodeChef : 1 
 * CSES : 58 
 * Codeforces : 55 
-* Leetcode : 45 
+* Leetcode : 46 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -103,4 +103,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 289
+* Total number of problems: 290
