@@ -47,7 +47,7 @@ Topics included(Some problems may not be listed here):
     * 0-1 Knapsack: LC/474
     * DP on string: LC/72
 
-7. String:
+7. String: LC/125
     * KMP:
     * Trie: SPOJ/ADAINDEX
 
@@ -88,7 +88,7 @@ USACO/691, USACO/787
 * CodeChef : 1 
 * CSES : 58 
 * Codeforces : 55 
-* Leetcode : 48 
+* Leetcode : 49 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -103,4 +103,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 292
+* Total number of problems: 293
