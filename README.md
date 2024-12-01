@@ -51,7 +51,7 @@ Topics included(Some problems may not be listed here):
     * KMP:
     * Trie: SPOJ/ADAINDEX
 
-8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53
+8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53, LC/238
 USACO/691, USACO/787
     * 2D pref: CSES/1652, USACO/1063
     * Divisibility of subarray: LC/974
@@ -92,7 +92,7 @@ USACO/691, USACO/787
 * CodeChef : 1 
 * CSES : 58 
 * Codeforces : 55 
-* Leetcode : 57 
+* Leetcode : 58 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -107,4 +107,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 305
+* Total number of problems: 306
