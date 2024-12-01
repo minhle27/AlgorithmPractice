@@ -57,7 +57,7 @@ USACO/691, USACO/787
     * Divisibility of subarray: LC/974
     * Difference Array (Inc/Dec Points): CF/816B, CF/295A, CF/102951D, CF/1000C
 
-9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M)
+9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M), LC/136
     * Bit optimization:
 
 10. Tree Algorithms: CSES/1674, USACO/968, USACO/788
@@ -92,7 +92,7 @@ USACO/691, USACO/787
 * CodeChef : 1 
 * CSES : 58 
 * Codeforces : 55 
-* Leetcode : 56 
+* Leetcode : 57 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -107,4 +107,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 303
+* Total number of problems: 304
