@@ -84,13 +84,15 @@ USACO/691, USACO/787
 16. Trees: LC/226, LC/104, LC/543, LC/110, LC/100
 
 17. Intervals: LC/57
+
+18. LinkedList: LC/206
 ``````
 ## STAT
 
 * CodeChef : 1 
 * CSES : 58 
 * Codeforces : 55 
-* Leetcode : 54 
+* Leetcode : 55 
 * HackerEarth : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
@@ -105,4 +107,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 11 
-* Total number of problems: 301
+* Total number of problems: 302
