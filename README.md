@@ -35,7 +35,7 @@ Topics included(Some problems may not be listed here):
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994, SPOJ/CAM5
     LC/542, USACO/644, CSES/1682, USACO/992, SPOJ/ALLIZWEL
     * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895, USACO/380
-    * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743, SPOJ/MICEMAZE, SPOJ/TRAFFICN, CSES/1195, CSES/1193, CC/AUG18-REVERSE(0-1BFS), SPOJ/ELEVTRBL, UVA/10557, LightOJ/1174
+    * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743, SPOJ/MICEMAZE, SPOJ/TRAFFICN, CSES/1195, CSES/1193, CC/AUG18-REVERSE(0-1BFS), SPOJ/ELEVTRBL, UVA/10557, LightOJ/1174, VNOJ/qbschool
     * MST: CSES/1675, kattis/cats, UVA/10397 (mst variants)
     * Graph Two Coloring: UVA/10004, USACO/920
     * Topo Sort: CSES/1679, LC/2115
@@ -107,5 +107,5 @@ USACO/691, USACO/787
 * Kattis : 13 
 * Contest : 28 
 * DMOJ : 1 
-* VNOJ : 11 
-* Total number of problems: 308
+* VNOJ : 12 
+* Total number of problems: 309
