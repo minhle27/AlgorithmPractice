@@ -18,7 +18,7 @@ Topics included(Some problems may not be listed here):
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN), LC/20, LC/150
-        * Monotonic Stack: LC/496, SPOJ/SSAM219G, LC/85, LC/739
+        * Monotonic Stack: LC/496, SPOJ/SSAM219G, LC/85, LC/739, CSES/1645
     * Queue: UVA/10901, CF/644B
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632
     * Heap(PQ):  USACO/690(M), LC/1046, LC/853
@@ -90,7 +90,7 @@ USACO/691, USACO/787
 ## STAT
 
 * CodeChef : 1 
-* CSES : 58 
+* CSES : 59 
 * Codeforces : 55 
 * Leetcode : 58 
 * HackerEarth : 1 
@@ -108,4 +108,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 12 
-* Total number of problems: 309
+* Total number of problems: 310
