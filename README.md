@@ -20,7 +20,7 @@ Topics included(Some problems may not be listed here):
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN), LC/20, LC/150
         * Monotonic Stack: LC/496, SPOJ/SSAM219G, LC/85, LC/739, CSES/1645
     * Queue: UVA/10901, CF/644B
-    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632
+    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D
     * Heap(PQ):  USACO/690(M), LC/1046, LC/853
     * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
@@ -29,7 +29,7 @@ Topics included(Some problems may not be listed here):
     * Sparse Table: CSES/1647
     * Sliding Window: LC/239, CSES/1141, CSES/2428
 
-3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C
+3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C, CF/616D
 
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994, SPOJ/CAM5
@@ -91,7 +91,7 @@ USACO/691, USACO/787
 
 * CodeChef : 1 
 * CSES : 59 
-* Codeforces : 55 
+* Codeforces : 56 
 * Leetcode : 58 
 * HackerEarth : 1 
 * LightOJ : 1 
@@ -108,4 +108,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 12 
-* Total number of problems: 310
+* Total number of problems: 311
