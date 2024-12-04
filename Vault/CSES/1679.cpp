@@ -5,7 +5,7 @@ using ll = long long;
 using pi = pair<int,int>;
 using pl = pair<ll,ll>;
 using vi = vector<int>;
-using vll = vector<ll>;
+using vl = vector<ll>;
 using iii = tuple<int, int, int>;
 
 #define PB push_back
@@ -39,8 +39,8 @@ ll fdiv(ll a, ll b) { return a/b-((a^b)<0&&a%b); } // divide a by b rounded down
 
 // bitwise ops
 constexpr int pct(int x) { return __builtin_popcount(x); } // # of bits set
-constexpr int bits(int x) { // assert(x >= 0); 
-	return x == 0 ? 0 : 31-__builtin_clz(x); } // floor(log2(x)) 
+constexpr int bits(int x) { // assert(x >= 0);
+	return x == 0 ? 0 : 31-__builtin_clz(x); } // floor(log2(x))
 constexpr int p2(int x) { return 1<<x; }
 constexpr int msk2(int x) { return p2(x)-1; }
 
@@ -50,7 +50,7 @@ constexpr int msk2(int x) { return p2(x)-1; }
 #define db(val) "["#val" = "<<(val)<<"] "
 #define CONCAT_(x, y) x##y
 #define CONCAT(x, y) CONCAT_(x, y)
-#ifdef LOCAL_DEBUG   
+#ifdef LOCAL_DEBUG
 #   define clog cerr << setw(__db_level * 2) << setfill(' ') << "" << setw(0)
 #   define DB() debug_block CONCAT(dbbl, __LINE__)
     int __db_level = 0;
@@ -71,7 +71,7 @@ template<class U, class V> print_op(pair<U, V>) {
 // for printing collection
 template<class Con, class = decltype(begin(declval<Con>()))>
 typename enable_if<!is_same<Con, string>::value, ostream&>::type
-operator<<(ostream& out, const Con& con) { 
+operator<<(ostream& out, const Con& con) {
     out << "{";
     for (auto beg = con.begin(), it = beg; it != con.end(); ++it)
         out << (it == beg ? "" : ", ") << *it;
@@ -80,8 +80,8 @@ operator<<(ostream& out, const Con& con) {
 
 // for printing std::tuple
 template<size_t i, class T> ostream& print_tuple_utils(ostream& out, const T& tup) {
-    if constexpr(i == tuple_size<T>::value) return out << ")"; 
-    else return print_tuple_utils<i + 1, T>(out << (i ? ", " : "(") << get<i>(tup), tup); 
+    if constexpr(i == tuple_size<T>::value) return out << ")";
+    else return print_tuple_utils<i + 1, T>(out << (i ? ", " : "(") << get<i>(tup), tup);
 }
 template<class ...U> print_op(tuple<U...>) {
     return print_tuple_utils<0, tuple<U...>>(out, u);
@@ -90,36 +90,6 @@ template<class ...U> print_op(tuple<U...>) {
 // g++ -std=c++17 -O2 name.cpp -o name -Wall
 
 // ACTUAL SOLUTION START HERE ////////////////////////////////////////////////////////////////
-int n, m;
-const int maxn = 1e5 + 7;
-vector<vi> g(maxn);
-vector<bool> visited(maxn, false);
-vi res;
-
-void dfs(int s) {
-    visited[s] = true;
-    for (auto u : g[s]) { 
-        if (!visited[u]) dfs(u); 
-    }
-    res.PB(s);
-}
-
-bool toposort() {
-    for (int i = 1; i <= n; i++) {
-        if (!visited[i]) dfs(i);
-    }
-    reverse(res.begin(), res.end());
-
-    // check if the graph is actually a DAG
-    vi ind(n + 3);
-    for (int i = 0; i < n; i++) ind[res[i]] = i + 1;
-    for (int i = 1; i <= n; i++) {
-        for (auto u : g[i]) {
-            if (ind[u] < ind[i]) return false;
-        }
-    }
-    return true;
-}
 
 int main()
 {
@@ -127,21 +97,35 @@ int main()
     cin.tie(nullptr);
 
     // freopen("debug.log", "w", stderr);
+    int n, m;
     cin >> n >> m;
-
+    vi indeg(n + 1);
+    vector<vi> g(n + 1);
     for (int i = 0; i < m; i++) {
         int a, b;
         cin >> a >> b;
-        g[a].PB(b);
+        g[a].push_back(b);
+        indeg[b]++;
     }
-    bool validDAG = toposort();
-    if (validDAG) {
-        for (auto u : res) cout << u << " ";
+    queue<int> q;
+    for (int i = 1; i <= n; i++) {
+        if (indeg[i] == 0) q.push(i);
     }
-    else {
+    vi orders;
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+        orders.push_back(u);
+        for (int nei: g[u]) {
+            indeg[nei]--;
+            if (indeg[nei] == 0) q.push(nei);
+        }
+    }
+    if (sz(orders) == n) {
+        for (auto course: orders) cout << course << " ";
+        cout << endl;
+    } else {
         cout << "IMPOSSIBLE" << endl;
     }
-    
-
     return 0;
 }
