@@ -85,7 +85,7 @@ USACO/691, USACO/787
 
 17. Intervals: LC/57
 
-18. LinkedList: LC/206, LC/143, LC/146
+18. LinkedList: LC/206, LC/143, LC/146, LC/116
 ``````
 ## STAT
 
