@@ -81,7 +81,7 @@ USACO/691, USACO/787
 
 15. Rectangle Geometry: USACO/567, USACO/759
 
-16. Trees: LC/226, LC/104, LC/543, LC/110, LC/100
+16. Trees: LC/226, LC/104, LC/543, LC/110, LC/100, LC/235
 
 17. Intervals: LC/57
 
@@ -92,7 +92,7 @@ USACO/691, USACO/787
 * CodeChef : 1 
 * CSES : 60 
 * Codeforces : 56 
-* Leetcode : 61 
+* Leetcode : 62 
 * HackerEarth : 1 
 * LightOJ : 1 
 * OJ.uz : 0 
@@ -108,4 +108,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 12 
-* Total number of problems: 315
+* Total number of problems: 316
