@@ -84,7 +84,7 @@ USACO/691, USACO/787
 
 16. Trees: LC/226, LC/104, LC/543, LC/110, LC/100, LC/235
 
-17. Intervals: LC/57
+17. Intervals: LC/57, USACO/896
 
 18. LinkedList: LC/206, LC/143, LC/146, LC/116
 ``````
@@ -103,11 +103,11 @@ USACO/691, USACO/787
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 9 
-* USACO : 47 
+* USACO : 48 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 323
+* Total number of problems: 324
