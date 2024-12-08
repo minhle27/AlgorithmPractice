@@ -92,7 +92,7 @@ USACO/691, USACO/787
 * CodeChef : 1 
 * CSES : 60 
 * Codeforces : 56 
-* Leetcode : 64 
+* Leetcode : 65 
 * HackerEarth : 1 
 * LightOJ : 1 
 * OJ.uz : 0 
@@ -108,4 +108,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 12 
-* Total number of problems: 318
+* Total number of problems: 319
