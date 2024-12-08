@@ -4,7 +4,7 @@ This repository contains my solutions to algorithmic problems. Main language is 
 
 Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
-    * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787, CSES/1164, CSES/1074, LC/973
+    * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787, CSES/1164, CSES/1074, LC/973, LC/75
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard, CF/283911A, CF/283911B, CF/283911C, CF/283911D, CF/283932A.cpp, CF/283932B, USACO/380
     CF/702C, USACO/594, USACO/992, LC/74, LC/33, LC/981
         * Minimax: CF/285083A, CF/285083B
@@ -94,7 +94,7 @@ USACO/691, USACO/787
 * CodeChef : 1 
 * CSES : 60 
 * Codeforces : 56 
-* Leetcode : 67 
+* Leetcode : 68 
 * HackerEarth : 1 
 * LightOJ : 1 
 * OJ.uz : 0 
@@ -110,4 +110,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 324
+* Total number of problems: 325
