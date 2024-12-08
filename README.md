@@ -28,6 +28,7 @@ Topics included(Some problems may not be listed here):
     * Indexed set: SPOJ/INVCNT
     * Sparse Table: CSES/1647
     * Sliding Window: LC/239, CSES/1141, CSES/2428
+    * Minimum Stack / Minimum queue: VNOJ/mink
 
 3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C, CF/616D
 
@@ -107,5 +108,5 @@ USACO/691, USACO/787
 * Kattis : 13 
 * Contest : 28 
 * DMOJ : 1 
-* VNOJ : 12 
-* Total number of problems: 319
+* VNOJ : 13 
+* Total number of problems: 320
