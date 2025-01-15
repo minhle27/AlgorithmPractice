@@ -42,7 +42,7 @@ Topics included(Some problems may not be listed here):
     * Topo Sort: CSES/1679, LC/2115
     * Cycle Check: CSES/1678, DMOJ/acsl1p4, LC/207, beecrowd/1610
 
-5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E), LC/221, UVA/11450, UVA/507, LC/740(house robber variation), LC/983, UVA/108 (Kadane on 2D), kattis/commercials (Kadane on 1D), AC/dp_i, CSES/1145, UVA/10130, LC/714, AtCoder/dp_k, SPOJ/COINS, LC/313, CF/909C, LC/45, LC/62, LC/322
+5. Dynamic Programming: CSES/1746(M), AC/dp_b(E), CF/1418C(M), CSES/1745(E), USACO/574(M), USACO/993(M), CSES/1093(E), USACO/694(M), VNOJ/nkrez(LIS variation)(E), VNOJ/nkcable(E), CSES/1639(E), LC/221, UVA/11450, UVA/507, LC/740(house robber variation), LC/983, UVA/108 (Kadane on 2D), kattis/commercials (Kadane on 1D), AC/dp_i, CSES/1145, UVA/10130, LC/714, AtCoder/dp_k, SPOJ/COINS, LC/313, CF/909C, LC/45, LC/62, LC/322, Timus/1009
     * Bitmask DP: CSES/1690, VNOI/lem3, AC/dp_o
     * DP on DAG: CSES/1680, CSES/1681
     * 0-1 Knapsack: LC/474
@@ -104,11 +104,11 @@ USACO/691, USACO/787
 * vjudge : 1 
 * UVA : 9 
 * USACO : 49 
-* Timus : 0 
+* Timus : 1 
 * AtCoder : 7 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 329
+* Total number of problems: 330
