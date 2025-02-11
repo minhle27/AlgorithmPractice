@@ -22,7 +22,7 @@ Topics included(Some problems may not be listed here):
     * Queue: UVA/10901, CF/644B
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D, LC/811, SPOJ/PRO
     * Heap(PQ):  USACO/690(M), LC/1046, LC/853, CodeChef/RRATING
-    * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305
+    * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305, CF/289390A
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
     * Fenwick trees: csa/swap_pairing
     * Indexed set: SPOJ/INVCNT
@@ -93,7 +93,7 @@ USACO/691, USACO/787
 * beecrowd : 1 
 * CodeChef : 2 
 * CSES : 60 
-* Codeforces : 58 
+* Codeforces : 59 
 * Leetcode : 71 
 * HackerEarth : 1 
 * LightOJ : 1 
@@ -111,4 +111,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 339
+* Total number of problems: 340
