@@ -26,7 +26,7 @@ init_db()
 
 app = Flask(__name__)
 
-# Main HTML template (includes heatmap, statistics, and logs)
+# Main HTML template with separate containers for month labels, day labels, and the heatmap grid.
 TEMPLATE = """
 <!doctype html>
 <html>
@@ -49,7 +49,7 @@ TEMPLATE = """
       text-align: center;
       margin-bottom: 20px;
     }
-    /* Date picker controls above heatmap */
+    /* Date picker controls */
     .date-controls {
       text-align: center;
       margin-bottom: 15px;
@@ -71,8 +71,39 @@ TEMPLATE = """
     .date-controls button:hover {
       background: #248737;
     }
-    #heatmap {
+    /* Heatmap Layout */
+    #heatmap-container {
+      position: relative;
       margin-bottom: 20px;
+    }
+    /* Month labels are displayed above the grid.
+       The left margin accounts for day labels below. */
+    #month-labels {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 4px;
+      margin-left: 30px;
+      margin-bottom: 4px;
+    }
+    /* The day labels container appears to the left of the grid. */
+    #day-labels {
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 4px;
+    }
+    #day-labels div {
+      font-size: 10px;
+      height: 15px;
+      line-height: 15px;
+    }
+    /* The heatmap grid itself */
+    #heatmap {
+      display: grid;
+      grid-template-rows: repeat(7, 15px);
+      grid-auto-flow: column;
+      grid-gap: 4px;
     }
     .square {
       width: 15px;
@@ -106,6 +137,7 @@ TEMPLATE = """
       color: #555;
       margin-bottom: 4px;
     }
+    /* Log container styles */
     #log {
       background: #fff;
       border: 1px solid #ddd;
@@ -168,7 +200,7 @@ TEMPLATE = """
   <div class="container">
     <h1>Activity Tracker</h1>
     
-    <!-- Date picker controls for adjusting heatmap window -->
+    <!-- Date picker controls -->
     <div class="date-controls">
       <label for="datePicker">Select end date for heatmap:</label>
       <input type="date" id="datePicker">
@@ -176,8 +208,14 @@ TEMPLATE = """
       <button id="resetDate">Reset to Today</button>
     </div>
     
-    <!-- Heatmap container -->
-    <div id="heatmap"></div>
+    <!-- Heatmap container including month and day labels -->
+    <div id="heatmap-container">
+      <div id="month-labels"></div>
+      <div style="display: flex;">
+        <div id="day-labels"></div>
+        <div id="heatmap"></div>
+      </div>
+    </div>
     
     <!-- Statistics section -->
     <div id="stats">Loading statistics...</div>
@@ -188,11 +226,11 @@ TEMPLATE = """
   </div>
   
   <script>
-    // Global variables for filtering and the current heatmap end date.
+    // Global variables for filtering and current heatmap end date.
     let currentDayFilter = null;
     let currentEndDate = new Date(); // Defaults to today.
   
-    // Initially loaded aggregated data from server.
+    // Initially loaded aggregated data from the server.
     window.aggregatedData = {{ aggregated_data|safe }};
   
     document.addEventListener("DOMContentLoaded", function(){
@@ -201,7 +239,7 @@ TEMPLATE = """
         updateStats();
     });
   
-    // Date picker functionality.
+    // Date-picker functionality.
     document.getElementById("goDate").addEventListener("click", function(){
         const picker = document.getElementById("datePicker");
         if (picker.value) {
@@ -215,7 +253,7 @@ TEMPLATE = """
         renderHeatmap();
     });
   
-    // Refresh aggregated data from the server and then update the heatmap.
+    // Refresh aggregated data from the server.
     function refreshHeatmapData(callback) {
       fetch("/api/aggregation")
         .then(response => response.json())
@@ -225,71 +263,121 @@ TEMPLATE = """
            if (callback) callback();
         });
     }
-  
-    // Render the heatmap for a 365-day window ending on currentEndDate.
+    
+    // Render the heatmap with month and day labels.
     function renderHeatmap() {
-      const heatmapContainer = document.getElementById('heatmap');
-      heatmapContainer.innerHTML = '';
+      // Retrieve container elements
+      const heatmapEl = document.getElementById('heatmap');
+      const monthLabelsEl = document.getElementById('month-labels');
+      const dayLabelsEl = document.getElementById('day-labels');
+      heatmapEl.innerHTML = "";
+      monthLabelsEl.innerHTML = "";
   
-      const aggregatedData = window.aggregatedData;
+      // Normalize end date (set time to midnight)
       let endDate = new Date(currentEndDate);
-      // Create window: 365 days ending with endDate.
+      endDate.setHours(0,0,0,0);
+      // 365-day window ending on endDate.
       let startDate = new Date(endDate);
       startDate.setDate(endDate.getDate() - 364);
   
-      // Calculate offset so that the first date aligns to the correct day of week.
+      // Calculate offset: number of blank cells to insert before the first valid date.
       const offset = startDate.getDay();
-      const daysElements = [];
-      // Insert blank squares for offset.
+      const oneDay = 24 * 60 * 60 * 1000;
+      const totalCells = offset + 365;
+      const columnCount = Math.ceil(totalCells / 7);
+  
+      // Compute month labels for each week (column)
+      const monthLabels = new Array(columnCount).fill("");
+      let prevMonth = null;
+      for (let i = 0; i < columnCount; i++) {
+          // Find the first valid cell in this column.
+          for (let j = 0; j < 7; j++) {
+              let cellIndex = i * 7 + j;
+              if (cellIndex < offset) continue;
+              let dayIndex = cellIndex - offset;
+              let cellDate = new Date(startDate.getTime() + dayIndex * oneDay);
+              let currentMonth = cellDate.getMonth();
+              if (i === 0 || currentMonth !== prevMonth) {
+                  const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+                  monthLabels[i] = monthNames[currentMonth];
+                  prevMonth = currentMonth;
+              }
+              break;
+          }
+      }
+  
+      // Render month labels.
+      monthLabelsEl.style.display = "grid";
+      monthLabelsEl.style.gridAutoFlow = "column";
+      monthLabelsEl.style.gridGap = "4px";
+      for (let i = 0; i < columnCount; i++) {
+          const labelDiv = document.createElement("div");
+          labelDiv.style.width = "15px";
+          labelDiv.style.textAlign = "center";
+          labelDiv.style.fontSize = "10px";
+          labelDiv.textContent = monthLabels[i];
+          monthLabelsEl.appendChild(labelDiv);
+      }
+  
+      // Build cells for the heatmap grid.
+      const cells = [];
       for (let i = 0; i < offset; i++) {
           const blank = document.createElement("div");
           blank.classList.add("square");
           blank.style.visibility = "hidden";
-          daysElements.push(blank);
+          cells.push(blank);
       }
-      
       let date = new Date(startDate);
       for (let i = 0; i < 365; i++) {
           let cellDate = new Date(date);
           const dateStr = cellDate.toISOString().split("T")[0];
-          const count = aggregatedData[dateStr] || 0;
+          const count = window.aggregatedData[dateStr] || 0;
           let level = "heat0";
           if (count === 1) { level = "heat1"; }
           else if (count === 2) { level = "heat2"; }
           else if (count === 3) { level = "heat3"; }
           else if (count >= 4) { level = "heat4"; }
-          
           const square = document.createElement("div");
           square.classList.add("square", level);
           square.setAttribute("data-date", dateStr);
-          // Tooltip displays date and count.
           square.title = dateStr + " (" + count + (count === 1 ? " activity)" : " activities)");
           square.addEventListener("click", function(){
               currentDayFilter = dateStr;
               updateLog(dateStr);
           });
-          daysElements.push(square);
+          cells.push(square);
           date.setDate(date.getDate() + 1);
       }
   
-      // Arrange the cells in a grid (53 columns, roughly one per week).
-      heatmapContainer.style.display = "grid";
-      heatmapContainer.style.gridTemplateColumns = "repeat(53, 15px)";
-      heatmapContainer.style.gridGap = "4px";
-      
-      daysElements.forEach(cell => heatmapContainer.appendChild(cell));
+      heatmapEl.style.display = "grid";
+      heatmapEl.style.gridTemplateRows = "repeat(7, 15px)";
+      heatmapEl.style.gridAutoFlow = "column";
+      heatmapEl.style.gridGap = "4px";
+      cells.forEach(cell => heatmapEl.appendChild(cell));
+  
+      // Render day labels (only show "Mon", "Wed", "Fri")
+      dayLabelsEl.innerHTML = "";
+      dayLabelsEl.style.display = "flex";
+      dayLabelsEl.style.flexDirection = "column";
+      dayLabelsEl.style.justifyContent = "space-between";
+      const dayLabelsText = {1: "Mon", 3: "Wed", 5: "Fri"};
+      for (let i = 0; i < 7; i++) {
+          const dayDiv = document.createElement("div");
+          dayDiv.style.height = "15px";
+          dayDiv.style.fontSize = "10px";
+          dayDiv.textContent = dayLabelsText[i] || "";
+          dayLabelsEl.appendChild(dayDiv);
+      }
     }
   
-    // Fetch logs and group them by date (newer dates first).
+    // Fetch and display logs; grouped by date.
     function updateLog(day) {
       currentDayFilter = day || null;
       const logContainer = document.getElementById("log");
       logContainer.innerHTML = "<p>Loading logs...</p>";
   
       let url = "/api/logs";
-      if (day) {
-         url += "?day=" + day;
-      }
+      if (day) { url += "?day=" + day; }
       fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -298,24 +386,18 @@ TEMPLATE = """
               return;
            }
   
-           // Group logs by date.
            const groups = {};
            data.forEach(entry => {
               let dateKey = entry.datetime.split(" ")[0];
-              if (!groups[dateKey]) {
-                  groups[dateKey] = [];
-              }
+              if (!groups[dateKey]) { groups[dateKey] = []; }
               groups[dateKey].push(entry);
            });
   
-           // Sort dates descending (most recent first).
            const dates = Object.keys(groups).sort((a, b) => new Date(b) - new Date(a));
            let html = "";
-  
            dates.forEach(dateKey => {
               html += "<div class='log-group'>";
               html += "<div class='log-date'>" + dateKey + " (" + groups[dateKey].length + " log" + (groups[dateKey].length > 1 ? "s" : "") + ")</div>";
-              // Sort logs by time descending.
               const logsSorted = groups[dateKey].sort((a, b) => new Date(b.datetime) - new Date(a.datetime));
               logsSorted.forEach(entry => {
                   const timePart = entry.datetime.split(" ")[1];
@@ -326,10 +408,8 @@ TEMPLATE = """
               });
               html += "</div>";
            });
-  
            logContainer.innerHTML = html;
   
-           // Attach deletion event handlers.
            document.querySelectorAll(".delete-button").forEach(button => {
               button.addEventListener("click", function(e) {
                   const logId = e.target.getAttribute("data-logid");
@@ -341,7 +421,7 @@ TEMPLATE = """
         });
     }
   
-    // Fetch stats from the server and update the statistics section.
+    // Fetch and display statistics.
     function updateStats(){
       fetch("/api/stats")
         .then(response => response.json())
@@ -356,19 +436,16 @@ TEMPLATE = """
         });
     }
   
-    // Delete log entry (calls backend DELETE endpoint).
+    // Delete a log entry.
     function deleteLog(logId) {
       fetch("/api/delete", {
          method: "DELETE",
-         headers: {
-             "Content-Type": "application/json"
-         },
+         headers: { "Content-Type": "application/json" },
          body: JSON.stringify({ id: logId })
       })
       .then(response => response.json())
       .then(data => {
          if (data.status === "success") {
-             // Refresh logs, heatmap, and statistics.
              updateLog(currentDayFilter);
              refreshHeatmapData();
              updateStats();
@@ -376,9 +453,7 @@ TEMPLATE = """
              alert("Error deleting log: " + data.message);
          }
       })
-      .catch(err => {
-         alert("Error deleting log.");
-      });
+      .catch(err => { alert("Error deleting log."); });
     }
   </script>
 </body>
@@ -422,7 +497,7 @@ def aggregation():
 
 @app.route("/api/stats")
 def get_stats():
-    # Retrieve aggregated counts (by day).
+    # Retrieve aggregated counts per day.
     conn = sqlite3.connect(DB_FILE)
     cur = conn.cursor()
     cur.execute("SELECT DATE(datetime) as log_date, COUNT(*) as count FROM activities GROUP BY log_date")
@@ -446,7 +521,6 @@ def get_stats():
         return max_streak
   
     if aggregated:
-        # All-time streak: from the earliest recorded date to the latest.
         all_dates = sorted(aggregated.keys())
         min_date = datetime.date.fromisoformat(all_dates[0])
         max_date = datetime.date.fromisoformat(all_dates[-1])
@@ -455,12 +529,10 @@ def get_stats():
         max_streak_all_time = 0
   
     today = datetime.date.today()
-    last_month_start = today - datetime.timedelta(days=29)  # last 30 days including today
+    last_month_start = today - datetime.timedelta(days=29)  # Last 30 days including today.
     max_streak_last_month = calculate_max_streak(last_month_start, today, aggregated)
   
-    # Total logs: sum of all counts.
     total_logs_all_time = sum(aggregated.values())
-  
     total_logs_last_month = 0
     for i in range(30):
         d = (today - datetime.timedelta(days=i)).isoformat()
@@ -512,7 +584,6 @@ if __name__ == '__main__':
             webbrowser.open("http://127.0.0.1:5000", new=2)
         threading.Timer(1, open_browser).start()
         app.run()
-  
     else:
         print("Unknown command. Use 'add' or 'view'.")
         sys.exit(1)
