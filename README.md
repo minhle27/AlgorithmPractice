@@ -14,7 +14,7 @@ Topics included(Some problems may not be listed here):
     * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736, USACO/615, USACO/712
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77, LC/51 (NQueens), USACO/1276, SPOJ/ALLIZWEL
         * Permutaion: LC/46
-    * Simulation: USACO/891, USACO/855
+    * Simulation: USACO/891, USACO/855, USACO/568
 
 2. Data Structures:
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN), LC/20, LC/150
@@ -103,7 +103,7 @@ USACO/691, USACO/787
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 11 
-* USACO : 51 
+* USACO : 52 
 * Timus : 1 
 * AtCoder : 7 
 * csacademy : 1 
@@ -111,4 +111,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 342
+* Total number of problems: 343
