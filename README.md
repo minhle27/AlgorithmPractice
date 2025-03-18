@@ -11,7 +11,7 @@ Topics included(Some problems may not be listed here):
         * Maximal Average: CF/285069A
         * Find the K-th Element: CF/285084A
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301, USACO/689, CSES/1073, CSES/1632
-    * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736, USACO/615, USACO/712, LC/638
+    * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736, USACO/615, USACO/712, LC/638, CF/831C
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77, LC/51 (NQueens), USACO/1276, SPOJ/ALLIZWEL, LC/78, CSES/1624
         * Permutaion: LC/46
     * Simulation: USACO/891, USACO/855, USACO/568
@@ -20,7 +20,7 @@ Topics included(Some problems may not be listed here):
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN), LC/20, LC/150
         * Monotonic Stack: LC/496, SPOJ/SSAM219G, LC/85, LC/739, CSES/1645
     * Queue: UVA/10901, CF/644B
-    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D, LC/811, SPOJ/PRO
+    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D, LC/811, SPOJ/PRO, CF/831C
     * Heap(PQ):  USACO/690(M), LC/1046, LC/853, CodeChef/RRATING
     * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305, CF/289390A
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
@@ -93,7 +93,7 @@ USACO/691, USACO/787
 * beecrowd : 1 
 * CodeChef : 2 
 * CSES : 61 
-* Codeforces : 59 
+* Codeforces : 60 
 * Leetcode : 74 
 * HackerEarth : 1 
 * LightOJ : 1 
@@ -111,4 +111,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 347
+* Total number of problems: 348
