@@ -80,7 +80,7 @@ USACO/691, USACO/787
 
 14. Ad Hoc: USACO/832, USACO/915, USACO/894
 
-15. Rectangle Geometry: USACO/567, USACO/759
+15. Rectangle Geometry: USACO/567, USACO/759, USACO/783
 
 16. Trees: LC/226, LC/104, LC/543, LC/110, LC/100, LC/235
 
@@ -103,7 +103,7 @@ USACO/691, USACO/787
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 11 
-* USACO : 54 
+* USACO : 55 
 * Timus : 1 
 * AtCoder : 7 
 * csacademy : 1 
@@ -111,4 +111,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 350
+* Total number of problems: 351
