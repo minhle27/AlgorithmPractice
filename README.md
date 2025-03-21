@@ -11,7 +11,7 @@ Topics included(Some problems may not be listed here):
         * Maximal Average: CF/285069A
         * Find the K-th Element: CF/285084A
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301, USACO/689, CSES/1073, CSES/1632, USACO/1084
-    * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736, USACO/615, USACO/712, LC/638, CF/831C
+    * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736, USACO/615, USACO/712, LC/638, CF/831C, CF/1914C
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77, LC/51 (NQueens), USACO/1276, SPOJ/ALLIZWEL, LC/78, CSES/1624
         * Permutaion: LC/46
     * Simulation: USACO/891, USACO/855, USACO/568
@@ -93,7 +93,7 @@ USACO/691, USACO/787
 * beecrowd : 1 
 * CodeChef : 2 
 * CSES : 61 
-* Codeforces : 60 
+* Codeforces : 61 
 * Leetcode : 74 
 * HackerEarth : 1 
 * LightOJ : 1 
@@ -111,4 +111,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 351
+* Total number of problems: 352
