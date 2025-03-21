@@ -4,7 +4,7 @@ This repository contains my solutions to algorithmic problems. Main language is 
 
 Topics included(Some problems may not be listed here):
 1. Basic Algorithms:
-    * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787, CSES/1164, CSES/1074, LC/973, LC/75, USACO/738
+    * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787, CSES/1164, CSES/1074, LC/973, LC/75, USACO/738, CF/104417G
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard, CF/283911A, CF/283911B, CF/283911C, CF/283911D, CF/283932A.cpp, CF/283932B, USACO/380, LC/875, LC/278, SPOJ/JNEXT, LC/436
     CF/702C, USACO/594, USACO/992, LC/74, LC/33, LC/981
         * Minimax: CF/285083A, CF/285083B
@@ -20,7 +20,7 @@ Topics included(Some problems may not be listed here):
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN), LC/20, LC/150
         * Monotonic Stack: LC/496, SPOJ/SSAM219G, LC/85, LC/739, CSES/1645
     * Queue: UVA/10901, CF/644B
-    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D, LC/811, SPOJ/PRO, CF/831C
+    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D, LC/811, SPOJ/PRO, CF/831C, CF/104417G
     * Heap(PQ):  USACO/690(M), LC/1046, LC/853, CodeChef/RRATING
     * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305, CF/289390A
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
@@ -93,7 +93,7 @@ USACO/691, USACO/787
 * beecrowd : 1 
 * CodeChef : 2 
 * CSES : 61 
-* Codeforces : 61 
+* Codeforces : 62 
 * Leetcode : 74 
 * HackerEarth : 1 
 * LightOJ : 1 
@@ -111,4 +111,4 @@ USACO/691, USACO/787
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 352
+* Total number of problems: 353
