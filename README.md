@@ -52,7 +52,7 @@ Topics included(Some problems may not be listed here):
     * KMP:
     * Trie: SPOJ/ADAINDEX
 
-8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53, LC/238, USACO/715, SPOJ/HAYBALE, CF/1826D, marisaoj/63
+8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53, LC/238, USACO/715, SPOJ/HAYBALE, CF/1826D, marisaoj/63, marisaoj/60
 USACO/691, USACO/787
     * 2D pref: CSES/1652, USACO/1063
     * Divisibility of subarray: LC/974
@@ -106,10 +106,10 @@ USACO/691, USACO/787
 * USACO : 56 
 * Timus : 1 
 * AtCoder : 7 
-* marisaoj : 1 
+* marisaoj : 2 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 359
+* Total number of problems: 360
