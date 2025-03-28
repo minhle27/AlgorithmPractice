@@ -30,7 +30,7 @@ Topics included(Some problems may not be listed here):
     * Sliding Window: LC/239, CSES/1141, CSES/2428
     * Minimum Stack / Minimum queue: VNOJ/mink
 
-3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C, CF/616D, USACO/738, CF/307093D, CF/307094C
+3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C, CF/616D, USACO/738, CF/307093D, CF/307094C, marisaoj/92
 
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994, SPOJ/CAM5, USACO/940
@@ -105,10 +105,10 @@ Topics included(Some problems may not be listed here):
 * USACO : 56 
 * Timus : 1 
 * AtCoder : 7 
-* marisaoj : 4 
+* marisaoj : 5 
 * csacademy : 1 
 * Kattis : 13 
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 362
+* Total number of problems: 363
