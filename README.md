@@ -7,7 +7,7 @@ Topics included(Some problems may not be listed here):
     * Sorting: kattis/sortofsorting(E), CF/1808B(M), USACO/786(M, time interval), LC/881, USACO/713, USACO/1251, USACO/787, CSES/1164, CSES/1074, LC/973, LC/75, USACO/738, CF/104417G
     * Binary Search: VNOJ/nksgame(M), CF/1201C(M), USACO/666(E), CSES/1085(M) (similar to LC/1011), USACO/690(M), USACO/858(M), CF/424B, CSES/1620, HackerRank/minimum-loss, CF/1117C, VNOJ/ndccard, CF/283911A, CF/283911B, CF/283911C, CF/283911D, CF/283932A.cpp, CF/283932B, USACO/380, LC/875, LC/278, SPOJ/JNEXT, LC/436, CF/1624D, USACO/1303, CF/283932C, CF/283932E
     CF/702C, USACO/594, USACO/992, LC/74, LC/33, LC/981
-        * Minimax: CF/285083A, CF/285083B
+        * Minimax: CF/285083A, CF/285083B, CF/285083C
         * Maximal Average: CF/285069A
         * Find the K-th Element: CF/285084A
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301, USACO/689, CSES/1073, CSES/1632, USACO/1084
@@ -92,7 +92,7 @@ Topics included(Some problems may not be listed here):
 * beecrowd : 1 
 * CodeChef : 2 
 * CSES : 61 
-* Codeforces : 70 
+* Codeforces : 71 
 * Leetcode : 74 
 * HackerEarth : 1 
 * LightOJ : 1 
@@ -111,4 +111,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 369
+* Total number of problems: 370
