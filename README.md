@@ -21,7 +21,7 @@ Topics included(Some problems may not be listed here):
         * Monotonic Stack: LC/496, SPOJ/SSAM219G, LC/85, LC/739, CSES/1645
     * Queue: UVA/10901, CF/644B
     * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D, LC/811, SPOJ/PRO, CF/831C, CF/104417G
-    * Heap(PQ):  USACO/690(M), LC/1046, LC/853, CodeChef/RRATING, USACO/859 
+    * Heap(PQ):  USACO/690(M), LC/1046, LC/853, CodeChef/RRATING, USACO/859, kattis/numbertree
     * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305, CF/289390A
     * Segment trees: CSES/1649, CSES/1648, CF/273169C, CF/380C, VNOJ/gss, VNOJ/qmax2
     * Fenwick trees: csa/swap_pairing
@@ -107,8 +107,8 @@ Topics included(Some problems may not be listed here):
 * AtCoder : 7 
 * marisaoj : 5 
 * csacademy : 1 
-* Kattis : 14 
+* Kattis : 15 
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 383
+* Total number of problems: 384
