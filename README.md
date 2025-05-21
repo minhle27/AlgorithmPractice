@@ -60,8 +60,7 @@ Topics included(Some problems may not be listed here):
     * Divisibility of subarray: LC/974
     * Difference Array (Inc/Dec Points): CF/816B, CF/295A, CF/102951D, CF/1000C, marisaoj/70
 
-9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M), LC/136, UVA/11933, UVA/12571, LC/201
-    * Bit optimization:
+9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M), LC/136, UVA/11933, UVA/12571, LC/201, LC/371
 
 10. Tree Algorithms: CSES/1674, USACO/968, USACO/788, USACO/1062
     * Tree diameter: CSES/1131, CSES/1132, CF/755C, LC/310
@@ -96,7 +95,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 2 
 * CSES : 62 
 * Codeforces : 76 
-* Leetcode : 75 
+* Leetcode : 76 
 * HackerEarth : 1 
 * LightOJ : 1 
 * OJ.uz : 0 
@@ -114,4 +113,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 394
+* Total number of problems: 395
