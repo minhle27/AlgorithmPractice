@@ -10,7 +10,7 @@ Topics included(Some problems may not be listed here):
         * Minimax: CF/285083A, CF/285083B, CF/285083C, CF/782B
         * Maximal Average: CF/285069A
         * Find the K-th Element: CF/285084A
-    * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301, USACO/689, CSES/1073, CSES/1632, USACO/1084, USACO/573, USACO/1062, UVA/410, UVA/1062
+    * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301, USACO/689, CSES/1073, CSES/1632, USACO/1084, USACO/573, USACO/1062, UVA/410, UVA/1062, CF/762B
     * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736, USACO/615, USACO/712, LC/638, CF/831C, CF/1914C
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77, LC/51 (NQueens), USACO/1276, SPOJ/ALLIZWEL, LC/78, CSES/1624
         * Permutaion: LC/46
@@ -29,9 +29,9 @@ Topics included(Some problems may not be listed here):
     * Indexed set: SPOJ/INVCNT
     * Sparse Table: CSES/1647
     * Sliding Window: LC/239, CSES/1141, CSES/2428
-    * Minimum Stack / Minimum queue: VNOJ/mink
+    * Minimum Stack / Minimum queue: VNOJ/mink, Kattis/bungeebuilder
 
-3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C, CF/616D, USACO/738, CF/307093D, CF/307094C, marisaoj/92, CF/307094A, CF/307094B, CF/307094E
+3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C, CF/616D, USACO/738, CF/307093D, CF/307094C, marisaoj/92, CF/307094A, CF/307094B, CF/307094E, CF/762B
 
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994, SPOJ/CAM5, USACO/940, USACO/1159
@@ -39,7 +39,7 @@ Topics included(Some problems may not be listed here):
     * FloodFill: SPOJ/UCV2013H, SPOJ/BCLKCOUN, USACO/895, USACO/380, CF/1365D, USACO/570
     * Shortest Path: CSES/1667, kattis/shortestpath3, CSES/1672, CF/295B, CSES/1671, USACO/969(min cost max flow), LC/743, SPOJ/MICEMAZE, SPOJ/TRAFFICN, CSES/1195, CSES/1193, CC/AUG18-REVERSE(0-1BFS), SPOJ/ELEVTRBL, UVA/10557, LightOJ/1174, VNOJ/qbschool
     * MST: CSES/1675, kattis/cats, UVA/10397 (mst variants)
-    * Graph Two Coloring: UVA/10004, USACO/920, CF/862B
+    * Graph Two Coloring: UVA/10004, USACO/920, CF/862B, CF/1176E
     * Topo Sort: CSES/1679, LC/2115
     * Cycle Check: CSES/1678, DMOJ/acsl1p4, LC/207, beecrowd/1610
     * Successor Graphs:
@@ -60,7 +60,7 @@ Topics included(Some problems may not be listed here):
     * Divisibility of subarray: LC/974
     * Difference Array (Inc/Dec Points): CF/816B, CF/295A, CF/102951D, CF/1000C, marisaoj/70
 
-9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M), LC/136, UVA/11933, UVA/12571, LC/201, LC/371, AC/abc365_e
+9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M), LC/136, UVA/11933, UVA/12571, LC/201, LC/371, AC/abc365_e, CF/1872E
 
 10. Tree Algorithms: CSES/1674, USACO/968, USACO/788, USACO/1062
     * Tree diameter: CSES/1131, CSES/1132, CF/755C, LC/310
@@ -94,7 +94,7 @@ Topics included(Some problems may not be listed here):
 * beecrowd : 1 
 * CodeChef : 2 
 * CSES : 62 
-* Codeforces : 76 
+* Codeforces : 79 
 * Leetcode : 76 
 * HackerEarth : 1 
 * LightOJ : 1 
@@ -109,8 +109,8 @@ Topics included(Some problems may not be listed here):
 * AtCoder : 8 
 * marisaoj : 5 
 * csacademy : 1 
-* Kattis : 17 
+* Kattis : 18 
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 396
+* Total number of problems: 400
