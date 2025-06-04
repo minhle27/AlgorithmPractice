@@ -87,7 +87,7 @@ Topics included(Some problems may not be listed here):
 
 17. Intervals: LC/57, USACO/896
 
-18. LinkedList: LC/206, LC/143, LC/146, LC/116
+18. LinkedList: LC/206, LC/143, LC/146, LC/116, UVA/11988
 ``````
 ## STAT
 
@@ -103,7 +103,7 @@ Topics included(Some problems may not be listed here):
 * SPOJ : 19 
 * LQDOJ : 1 
 * vjudge : 1 
-* UVA : 17 
+* UVA : 18 
 * USACO : 64 
 * Timus : 1 
 * AtCoder : 8 
@@ -113,4 +113,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 400
+* Total number of problems: 401
