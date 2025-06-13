@@ -55,7 +55,7 @@ Topics included(Some problems may not be listed here):
     * KMP:
     * Trie: SPOJ/ADAINDEX
 
-8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53, LC/238, USACO/715, SPOJ/HAYBALE, CF/1826D, marisaoj/63, marisaoj/60, marisaoj/66, USACO/691, USACO/787, USACO/645
+8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53, LC/238, USACO/715, SPOJ/HAYBALE, CF/1826D, marisaoj/63, marisaoj/60, marisaoj/66, USACO/691, USACO/787, USACO/645, CF/1398C
     * 2D pref: CSES/1652, USACO/1063
     * Divisibility of subarray: LC/974
     * Difference Array (Inc/Dec Points): CF/816B, CF/295A, CF/102951D, CF/1000C, marisaoj/70
@@ -93,8 +93,8 @@ Topics included(Some problems may not be listed here):
 
 * beecrowd : 1 
 * CodeChef : 2 
-* CSES : 62 
-* Codeforces : 79 
+* CSES : 64 
+* Codeforces : 80 
 * Leetcode : 76 
 * HackerEarth : 1 
 * LightOJ : 1 
@@ -104,7 +104,7 @@ Topics included(Some problems may not be listed here):
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 18 
-* USACO : 64 
+* USACO : 66 
 * Timus : 1 
 * AtCoder : 9 
 * marisaoj : 5 
@@ -113,4 +113,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 402
+* Total number of problems: 407
