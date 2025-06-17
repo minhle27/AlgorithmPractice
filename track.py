@@ -33,196 +33,546 @@ TEMPLATE = """
 <head>
   <title>Activity Tracker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f7f6;
-      color: #333;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #2d3748;
       margin: 0;
       padding: 20px;
+      min-height: 100vh;
+      line-height: 1.6;
     }
+    
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
     }
+    
     h1 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      letter-spacing: -0.02em;
     }
+    
+    /* Card-style containers */
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+    
+
+    
     /* Date picker controls */
     .date-controls {
       text-align: center;
+      margin-bottom: 25px;
+      padding: 25px;
+    }
+    
+    .date-controls label {
+      display: block;
       margin-bottom: 15px;
+      font-weight: 500;
+      color: #4a5568;
+      font-size: 1.1rem;
     }
-    .date-controls input,
-    .date-controls button {
-      padding: 8px 12px;
-      margin: 5px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      font-size: 1em;
+    
+    .date-controls input {
+      padding: 12px 16px;
+      margin: 8px;
+      border-radius: 10px;
+      border: 2px solid #e2e8f0;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: all 0.2s ease;
+      background: white;
     }
+    
+    .date-controls input:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    
     .date-controls button {
-      background: #30a14e;
-      color: white;
+      padding: 12px 20px;
+      margin: 8px;
+      border-radius: 10px;
       border: none;
+      font-size: 1rem;
+      font-weight: 500;
       cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
     }
-    .date-controls button:hover {
-      background: #248737;
+    
+    .date-controls button:first-of-type {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
     }
+    
+    .date-controls button:first-of-type:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+    
+    .date-controls button:last-of-type {
+      background: #f7fafc;
+      color: #4a5568;
+      border: 2px solid #e2e8f0;
+    }
+    
+    .date-controls button:last-of-type:hover {
+      background: #edf2f7;
+      border-color: #cbd5e0;
+    }
+    
     /* Heatmap Layout */
+    .heatmap-card {
+      padding: 30px 30px 25px 30px;
+      margin-bottom: 25px;
+      overflow-x: auto;
+    }
+    
+    .heatmap-card::-webkit-scrollbar {
+      height: 8px;
+    }
+    
+    .heatmap-card::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+      margin: 2px 8px 2px 8px;
+    }
+    
+    .heatmap-card::-webkit-scrollbar-thumb {
+      background: #cbd5e0;
+      border-radius: 4px;
+      border: 1px solid #f1f5f9;
+    }
+    
+    .heatmap-card::-webkit-scrollbar-thumb:hover {
+      background: #a0aec0;
+    }
+    
     #heatmap-container {
       position: relative;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      min-width: fit-content;
+      width: 100%;
+      box-sizing: border-box;
     }
-    /* Month labels are displayed above the grid.
-       The left margin accounts for day labels below. */
+    
+    /* Month labels */
     #month-labels {
       display: grid;
       grid-auto-flow: column;
       grid-gap: 4px;
-      margin-left: 30px;
-      margin-bottom: 4px;
+      margin-left: 35px;
+      margin-bottom: 8px;
     }
-    /* The day labels container appears to the left of the grid. */
+    
+    #month-labels div {
+      font-size: 11px;
+      font-weight: 500;
+      color: #718096;
+      text-align: center;
+    }
+    
+    /* Day labels */
     #day-labels {
-      width: 30px;
+      width: 35px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-right: 4px;
+      margin-right: 6px;
     }
+    
     #day-labels div {
-      font-size: 10px;
+      font-size: 11px;
+      font-weight: 500;
+      color: #718096;
       height: 15px;
       line-height: 15px;
     }
-    /* The heatmap grid itself */
+    
+    /* Heatmap grid */
     #heatmap {
       display: grid;
       grid-template-rows: repeat(7, 15px);
       grid-auto-flow: column;
       grid-gap: 4px;
     }
+    
     .square {
       width: 15px;
       height: 15px;
-      border-radius: 3px;
+      border-radius: 4px;
       cursor: pointer;
+      transition: all 0.15s ease;
+      border: 1px solid rgba(0,0,0,0.04);
     }
-    .heat0 { background-color: #ebedf0; }
-    .heat1 { background-color: #c6e48b; }
-    .heat2 { background-color: #7bc96f; }
-    .heat3 { background-color: #239a3b; }
-    .heat4 { background-color: #196127; }
+    
+
+    
+    .heat0 { background: #f1f5f9; }
+    .heat1 { background: linear-gradient(135deg, #bbf7d0, #86efac); }
+    .heat2 { background: linear-gradient(135deg, #86efac, #4ade80); }
+    .heat3 { background: linear-gradient(135deg, #4ade80, #22c55e); }
+    .heat4 { background: linear-gradient(135deg, #22c55e, #16a34a); }
+    
     /* Statistics styles */
+    .stats-card {
+      padding: 30px;
+      margin-bottom: 25px;
+    }
+    
     #stats {
-      border: 1px solid #ddd;
-      background: #fff;
-      padding: 10px;
-      border-radius: 4px;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
     }
+    
     .stat-item {
-      font-size: 1.1em;
       text-align: center;
-      margin: 5px 20px;
+      padding: 20px;
+      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      border: 1px solid #e2e8f0;
     }
+    
+    .stat-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
     .stat-label {
-      font-weight: bold;
-      color: #555;
-      margin-bottom: 4px;
+      font-weight: 600;
+      color: #4a5568;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
+    
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
     /* Log container styles */
+    .logs-card {
+      padding: 30px;
+    }
+    
+    .logs-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .logs-header h3 {
+      margin: 0;
+      color: #2d3748;
+      font-size: 1.5rem;
+      font-weight: 600;
+      position: relative;
+    }
+    
+    .search-loading {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #e2e8f0;
+      border-top: 2px solid #667eea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-left: 10px;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .logs-content {
+      position: relative;
+    }
+    
+    .logs-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      z-index: 10;
+    }
+    
+    .search-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .search-container input {
+      padding: 10px 14px;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      min-width: 200px;
+      transition: all 0.2s ease;
+    }
+    
+    .search-container input:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    
+    .search-container button {
+      padding: 10px 16px;
+      background: #f7fafc;
+      color: #4a5568;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    
+    .search-container button:hover {
+      background: #edf2f7;
+      border-color: #cbd5e0;
+    }
+    
     #log {
-      background: #fff;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 4px;
       max-height: 500px;
       overflow-y: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
+    
+    /* Pagination styles */
+    .pagination-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 15px 0;
+    }
+    
+    .pagination-btn {
+      padding: 8px 12px;
+      background: #f7fafc;
+      color: #4a5568;
+      border: 2px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    
+    .pagination-btn:hover:not(:disabled) {
+      background: #edf2f7;
+      border-color: #cbd5e0;
+    }
+    
+    .pagination-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    
+    .pagination-btn.active {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      border-color: #667eea;
+    }
+    
+    .pagination-info {
+      color: #718096;
+      font-size: 0.9rem;
+      margin: 0 10px;
+    }
+    
     .log-group:not(:last-child) {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
+    
     .log-date {
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-bottom: 5px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 5px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      background: linear-gradient(135deg, #f8fafc, #edf2f7);
+      border-radius: 10px;
+      color: #2d3748;
+      border-left: 4px solid #667eea;
     }
+    
     .log-entry {
-      padding-left: 15px;
-      border-left: 2px solid #239a3b;
-      margin-bottom: 5px;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      background: white;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      transition: all 0.2s ease;
     }
+    
+
+    
     .log-info {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      flex: 1;
     }
+    
     .log-time {
-      font-weight: bold;
-      margin-right: 5px;
+      font-weight: 600;
+      margin-right: 15px;
+      color: #667eea;
+      font-size: 0.9rem;
+      padding: 4px 8px;
+      background: rgba(102, 126, 234, 0.1);
+      border-radius: 6px;
     }
+    
+    .log-message {
+      color: #4a5568;
+    }
+    
     .delete-button {
-      background: none;
+      background: linear-gradient(135deg, #fed7d7, #feb2b2);
       border: none;
-      color: #d00;
+      color: #c53030;
       cursor: pointer;
-      font-size: 0.8em;
-      margin-left: 10px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      font-family: inherit;
     }
+    
     .delete-button:hover {
-      text-decoration: underline;
-    }
-    .reset-button {
-      margin: 10px 0;
-      padding: 8px 12px;
-      background: #30a14e;
+      background: linear-gradient(135deg, #feb2b2, #fc8181);
       color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+      transform: scale(1.05);
     }
-    .reset-button:hover {
-      background: #248737;
+    
+    /* Loading state */
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #718096;
+      font-style: italic;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      body { padding: 15px; }
+      h1 { font-size: 2rem; }
+      .card { margin-bottom: 20px; }
+      .date-controls, .heatmap-card, .stats-card, .logs-card { padding: 20px; }
+      #stats { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
+      .stat-item { padding: 15px; }
+      .stat-value { font-size: 1.5rem; }
+      .logs-header { flex-direction: column; align-items: stretch; }
+      .search-container { justify-content: center; }
+      .search-container input { min-width: 150px; }
+      .pagination-container { flex-wrap: wrap; }
+    }
+    
+    @media (max-width: 480px) {
+      h1 { font-size: 1.75rem; }
+      .date-controls input, .date-controls button { width: 100%; margin: 5px 0; }
+      #stats { grid-template-columns: 1fr; }
+      .search-container { flex-direction: column; gap: 8px; }
+      .search-container input, .search-container button { width: 100%; }
+      .pagination-btn { font-size: 0.8rem; padding: 6px 10px; }
+      .pagination-info { font-size: 0.8rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Activity Tracker</h1>
+    <h1>🔥 Activity Tracker</h1>
     
     <!-- Date picker controls -->
-    <div class="date-controls">
-      <label for="datePicker">Select end date for heatmap:</label>
+    <div class="card date-controls">
+      <label for="datePicker">📅 Select end date for heatmap</label>
       <input type="date" id="datePicker">
       <button id="goDate">Go</button>
       <button id="resetDate">Reset to Today</button>
     </div>
     
-    <!-- Heatmap container including month and day labels -->
-    <div id="heatmap-container">
-      <div id="month-labels"></div>
-      <div style="display: flex;">
-        <div id="day-labels"></div>
-        <div id="heatmap"></div>
+    <!-- Heatmap container -->
+    <div class="card heatmap-card">
+      <div id="heatmap-container">
+        <div id="month-labels"></div>
+        <div style="display: flex;">
+          <div id="day-labels"></div>
+          <div id="heatmap"></div>
+        </div>
       </div>
     </div>
     
     <!-- Statistics section -->
-    <div id="stats">Loading statistics...</div>
+    <div class="card stats-card">
+      <div id="stats" class="loading">Loading statistics...</div>
+    </div>
     
-    <button class="reset-button" onclick="updateLog()">Show All Logs</button>
     <!-- Log container -->
-    <div id="log"></div>
+    <div class="card logs-card">
+      <div class="logs-header">
+        <h3>📊 Activity Logs</h3>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="🔍 Search logs..." />
+          <button id="clearSearch">Clear</button>
+        </div>
+      </div>
+      <div class="logs-content">
+        <div id="log"></div>
+        <div id="pagination" class="pagination-container"></div>
+      </div>
+    </div>
   </div>
   
   <script>
@@ -233,10 +583,41 @@ TEMPLATE = """
     // Initially loaded aggregated data from the server.
     window.aggregatedData = {{ aggregated_data|safe }};
   
+    // Global variables for pagination and search
+    let currentPage = 1;
+    let currentSearch = "";
+    const itemsPerPage = 20;
+    
     document.addEventListener("DOMContentLoaded", function(){
         renderHeatmap();
         updateLog();
         updateStats();
+        
+        // Setup search functionality
+        const searchInput = document.getElementById("searchInput");
+        const clearSearchBtn = document.getElementById("clearSearch");
+        
+        let searchTimeout;
+        searchInput.addEventListener("input", function(){
+            clearTimeout(searchTimeout);
+            
+            // Show loading indicator immediately
+            showSearchLoading(true);
+            
+            searchTimeout = setTimeout(() => {
+                currentSearch = searchInput.value;
+                currentPage = 1;
+                updateLog(currentDayFilter);
+            }, 200); // reduced from 300ms to 200ms
+        });
+        
+        clearSearchBtn.addEventListener("click", function(){
+            searchInput.value = "";
+            currentSearch = "";
+            currentPage = 1;
+            showSearchLoading(false);
+            updateLog(currentDayFilter);
+        });
     });
   
     // Date-picker functionality.
@@ -273,17 +654,18 @@ TEMPLATE = """
       heatmapEl.innerHTML = "";
       monthLabelsEl.innerHTML = "";
   
-      // Normalize end date (set time to midnight)
+      // Normalize end date (set time to end of day to include today)
       let endDate = new Date(currentEndDate);
-      endDate.setHours(0,0,0,0);
+      endDate.setHours(23,59,59,999);
       // 365-day window ending on endDate.
       let startDate = new Date(endDate);
       startDate.setDate(endDate.getDate() - 364);
+      startDate.setHours(0,0,0,0);
   
       // Calculate offset: number of blank cells to insert before the first valid date.
       const offset = startDate.getDay();
       const oneDay = 24 * 60 * 60 * 1000;
-      const totalCells = offset + 365;
+      const totalCells = offset + 366;  // Updated to account for the extra day
       const columnCount = Math.ceil(totalCells / 7);
   
       // Compute month labels for each week (column)
@@ -314,7 +696,7 @@ TEMPLATE = """
           const labelDiv = document.createElement("div");
           labelDiv.style.width = "15px";
           labelDiv.style.textAlign = "center";
-          labelDiv.style.fontSize = "10px";
+          labelDiv.style.fontSize = "11px";
           labelDiv.textContent = monthLabels[i];
           monthLabelsEl.appendChild(labelDiv);
       }
@@ -328,7 +710,7 @@ TEMPLATE = """
           cells.push(blank);
       }
       let date = new Date(startDate);
-      for (let i = 0; i < 365; i++) {
+      for (let i = 0; i <= 365; i++) {  // Changed to <= to include today
           let cellDate = new Date(date);
           const dateStr = cellDate.toISOString().split("T")[0];
           const count = window.aggregatedData[dateStr] || 0;
@@ -341,6 +723,14 @@ TEMPLATE = """
           square.classList.add("square", level);
           square.setAttribute("data-date", dateStr);
           square.title = dateStr + " (" + count + (count === 1 ? " activity)" : " activities)");
+          
+          // Highlight today's cell
+          const today = new Date().toISOString().split("T")[0];
+          if (dateStr === today) {
+              square.style.border = "2px solid #667eea";
+              square.style.boxShadow = "0 0 0 1px rgba(102, 126, 234, 0.3)";
+          }
+          
           square.addEventListener("click", function(){
               currentDayFilter = dateStr;
               updateLog(dateStr);
@@ -364,35 +754,80 @@ TEMPLATE = """
       for (let i = 0; i < 7; i++) {
           const dayDiv = document.createElement("div");
           dayDiv.style.height = "15px";
-          dayDiv.style.fontSize = "10px";
+          dayDiv.style.fontSize = "11px";
           dayDiv.textContent = dayLabelsText[i] || "";
           dayLabelsEl.appendChild(dayDiv);
       }
     }
   
-    // Fetch and display logs; grouped by date.
+        // Show/hide search loading indicator
+    function showSearchLoading(show) {
+      const header = document.querySelector('.logs-header h3');
+      const existingSpinner = header.querySelector('.search-loading');
+      
+      if (show && !existingSpinner) {
+        const spinner = document.createElement('span');
+        spinner.className = 'search-loading';
+        header.appendChild(spinner);
+      } else if (!show && existingSpinner) {
+        existingSpinner.remove();
+      }
+    }
+    
+    // Show smooth loading overlay
+    function showLogsOverlay(show) {
+      const logsContent = document.querySelector('.logs-content');
+      let overlay = logsContent.querySelector('.logs-overlay');
+      
+      if (show && !overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'logs-overlay';
+        overlay.innerHTML = '<div class="search-loading"></div>';
+        logsContent.appendChild(overlay);
+      } else if (!show && overlay) {
+        overlay.remove();
+      }
+    }
+
+    // Fetch and display logs with pagination and search
     function updateLog(day) {
       currentDayFilter = day || null;
       const logContainer = document.getElementById("log");
-      logContainer.innerHTML = "<p>Loading logs...</p>";
-  
-      let url = "/api/logs";
-      if (day) { url += "?day=" + day; }
-      fetch(url)
+      const paginationContainer = document.getElementById("pagination");
+      
+      // For initial load or when no existing content
+      if (logContainer.innerHTML === "" || logContainer.innerHTML.includes("Loading logs...")) {
+        logContainer.innerHTML = "<div class='loading'>Loading logs...</div>";
+        paginationContainer.innerHTML = "";
+      } else {
+        // Show overlay for smoother experience when content exists
+        showLogsOverlay(true);
+      }
+
+      let url = "/api/logs?page=" + currentPage + "&per_page=" + itemsPerPage;
+      if (day) url += "&day=" + day;
+      if (currentSearch) url += "&search=" + encodeURIComponent(currentSearch);
+      
+            fetch(url)
         .then(response => response.json())
         .then(data => {
-           if (data.length === 0) {
-              logContainer.innerHTML = "<p>No logs found.</p>";
+           // Hide loading indicators
+           showSearchLoading(false);
+           showLogsOverlay(false);
+           
+           if (data.logs.length === 0) {
+              logContainer.innerHTML = "<div class='loading'>No logs found.</div>";
+              paginationContainer.innerHTML = "";
               return;
            }
-  
+
            const groups = {};
-           data.forEach(entry => {
+           data.logs.forEach(entry => {
               let dateKey = entry.datetime.split(" ")[0];
               if (!groups[dateKey]) { groups[dateKey] = []; }
               groups[dateKey].push(entry);
            });
-  
+
            const dates = Object.keys(groups).sort((a, b) => new Date(b) - new Date(a));
            let html = "";
            dates.forEach(dateKey => {
@@ -402,14 +837,17 @@ TEMPLATE = """
               logsSorted.forEach(entry => {
                   const timePart = entry.datetime.split(" ")[1];
                   html += "<div class='log-entry'>";
-                  html += "<span class='log-info'><span class='log-time'>" + timePart + "</span> - " + entry.message + "</span>";
+                  html += "<div class='log-info'><span class='log-time'>" + timePart + "</span><span class='log-message'>" + entry.message + "</span></div>";
                   html += "<button class='delete-button' data-logid='" + entry.id + "'>Delete</button>";
                   html += "</div>";
               });
               html += "</div>";
            });
            logContainer.innerHTML = html;
-  
+
+           // Render pagination
+           renderPagination(data);
+
            document.querySelectorAll(".delete-button").forEach(button => {
               button.addEventListener("click", function(e) {
                   const logId = e.target.getAttribute("data-logid");
@@ -418,7 +856,62 @@ TEMPLATE = """
                   }
               });
            });
+        })
+        .catch(err => {
+           // Hide loading indicators on error
+           showSearchLoading(false);
+           showLogsOverlay(false);
+           logContainer.innerHTML = "<div class='loading'>Error loading logs.</div>";
+           paginationContainer.innerHTML = "";
         });
+    }
+    
+    // Render pagination controls
+    function renderPagination(data) {
+      const paginationContainer = document.getElementById("pagination");
+      if (data.total_pages <= 1) {
+        paginationContainer.innerHTML = "";
+        return;
+      }
+      
+      let html = "";
+      
+      // Previous button
+      html += `<button class="pagination-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})">← Previous</button>`;
+      
+      // Page numbers
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(data.total_pages, currentPage + 2);
+      
+      if (startPage > 1) {
+        html += `<button class="pagination-btn" onclick="changePage(1)">1</button>`;
+        if (startPage > 2) html += `<span class="pagination-info">...</span>`;
+      }
+      
+      for (let i = startPage; i <= endPage; i++) {
+        html += `<button class="pagination-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+      }
+      
+      if (endPage < data.total_pages) {
+        if (endPage < data.total_pages - 1) html += `<span class="pagination-info">...</span>`;
+        html += `<button class="pagination-btn" onclick="changePage(${data.total_pages})">${data.total_pages}</button>`;
+      }
+      
+      // Next button
+      html += `<button class="pagination-btn" ${currentPage === data.total_pages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">Next →</button>`;
+      
+      // Info
+      const start = (currentPage - 1) * itemsPerPage + 1;
+      const end = Math.min(currentPage * itemsPerPage, data.total_count);
+      html += `<span class="pagination-info">Showing ${start}-${end} of ${data.total_count}</span>`;
+      
+      paginationContainer.innerHTML = html;
+    }
+    
+    // Change page function
+    function changePage(page) {
+      currentPage = page;
+      updateLog(currentDayFilter);
     }
   
     // Fetch and display statistics.
@@ -428,10 +921,10 @@ TEMPLATE = """
         .then(data => {
            const statsContainer = document.getElementById("stats");
            let html = "";
-           html += "<div class='stat-item'><div class='stat-label'>Max Streak (All Time)</div><div>"+ data.max_streak_all_time +"</div></div>";
-           html += "<div class='stat-item'><div class='stat-label'>Max Streak (Last Month)</div><div>"+ data.max_streak_last_month +"</div></div>";
-           html += "<div class='stat-item'><div class='stat-label'>Total Logs (All Time)</div><div>"+ data.total_logs_all_time +"</div></div>";
-           html += "<div class='stat-item'><div class='stat-label'>Total Logs (Last Month)</div><div>"+ data.total_logs_last_month +"</div></div>";
+           html += "<div class='stat-item'><div class='stat-label'>Max Streak (All Time)</div><div class='stat-value'>"+ data.max_streak_all_time +"</div></div>";
+           html += "<div class='stat-item'><div class='stat-label'>Max Streak (Last Month)</div><div class='stat-value'>"+ data.max_streak_last_month +"</div></div>";
+           html += "<div class='stat-item'><div class='stat-label'>Total Logs (All Time)</div><div class='stat-value'>"+ data.total_logs_all_time +"</div></div>";
+           html += "<div class='stat-item'><div class='stat-label'>Total Logs (Last Month)</div><div class='stat-value'>"+ data.total_logs_last_month +"</div></div>";
            statsContainer.innerHTML = html;
         });
     }
@@ -446,6 +939,7 @@ TEMPLATE = """
       .then(response => response.json())
       .then(data => {
          if (data.status === "success") {
+             // Stay on current page, but go to page 1 if current page becomes empty
              updateLog(currentDayFilter);
              refreshHeatmapData();
              updateStats();
@@ -474,16 +968,50 @@ def index():
 @app.route("/api/logs")
 def get_logs():
     day = request.args.get("day", None)
+    search = request.args.get("search", "")
+    page = int(request.args.get("page", 1))
+    per_page = int(request.args.get("per_page", 20))
+    
     conn = sqlite3.connect(DB_FILE)
     cur = conn.cursor()
+    
+    # Build the WHERE clause
+    where_conditions = []
+    params = []
+    
     if day:
-        cur.execute("SELECT id, datetime, message FROM activities WHERE DATE(datetime)=? ORDER BY datetime DESC", (day,))
-    else:
-        cur.execute("SELECT id, datetime, message FROM activities ORDER BY datetime DESC")
+        where_conditions.append("DATE(datetime) = ?")
+        params.append(day)
+    
+    if search:
+        where_conditions.append("message LIKE ?")
+        params.append(f"%{search}%")
+    
+    where_clause = ""
+    if where_conditions:
+        where_clause = "WHERE " + " AND ".join(where_conditions)
+    
+    # Get total count
+    count_query = f"SELECT COUNT(*) FROM activities {where_clause}"
+    cur.execute(count_query, params)
+    total_count = cur.fetchone()[0]
+    
+    # Get paginated results
+    offset = (page - 1) * per_page
+    query = f"SELECT id, datetime, message FROM activities {where_clause} ORDER BY datetime DESC LIMIT ? OFFSET ?"
+    cur.execute(query, params + [per_page, offset])
     rows = cur.fetchall()
     conn.close()
+    
     logs = [{"id": row[0], "datetime": row[1], "message": row[2]} for row in rows]
-    return jsonify(logs)
+    
+    return jsonify({
+        "logs": logs,
+        "total_count": total_count,
+        "page": page,
+        "per_page": per_page,
+        "total_pages": (total_count + per_page - 1) // per_page
+    })
 
 @app.route("/api/aggregation")
 def aggregation():
