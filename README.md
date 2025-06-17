@@ -63,7 +63,7 @@ Topics included(Some problems may not be listed here):
 9. Bit Manipulations: CF/1097B(E), CF/550B(E, subsets), CF/1556D(H), HE/mattey-multiplication-6(E), AC/abc295_d(M), LC/136, UVA/11933, UVA/12571, LC/201, LC/371, AC/abc365_e, CF/1872E
 
 10. Tree Algorithms: CSES/1674, USACO/968, USACO/788, USACO/1062
-    * Tree diameter: CSES/1131, CSES/1132, CF/755C, LC/310
+    * Tree diameter: CSES/1131, CSES/1132, CF/755C, LC/310, SPOJ/BENEFACT
     * Euler Tour: CSES/1137
     * LCA: CSES/1688, CSES/1135
 
@@ -100,7 +100,7 @@ Topics included(Some problems may not be listed here):
 * LightOJ : 1 
 * OJ.uz : 0 
 * HackerRank : 1 
-* SPOJ : 19 
+* SPOJ : 20 
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 18 
@@ -113,4 +113,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 408
+* Total number of problems: 409
