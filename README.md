@@ -11,7 +11,7 @@ Topics included(Some problems may not be listed here):
         * Maximal Average: CF/285069A
         * Find the K-th Element: CF/285084A
     * Greedy: CSES/1090, CSES/1629(E), CF/1418C(M), CF/1338A(M), CSES/1630(M), kattis/doubleup, LC/948, LC/45, LC/134, USACO/1301, USACO/689, CSES/1073, CSES/1632, USACO/1084, USACO/573, USACO/1062, UVA/410, UVA/1062, CF/762B, USACO/835
-    * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736, USACO/615, USACO/712, LC/638, CF/831C, CF/1914C
+    * Complete Search: CF/863B, USACO/963(M), CF/574B, USACO/736, USACO/615, USACO/712, LC/638, CF/831C, CF/1914C, USACO/639
     * Backtracking: CSES/1623(E), CF/1097B(E), CSES/1622(M), LC/77, LC/51 (NQueens), USACO/1276, SPOJ/ALLIZWEL, LC/78, CSES/1624, CF/839C
         * Permutaion: LC/46
     * Simulation: USACO/891, USACO/855, USACO/568
@@ -104,7 +104,7 @@ Topics included(Some problems may not be listed here):
 * LQDOJ : 1 
 * vjudge : 1 
 * UVA : 18 
-* USACO : 66 
+* USACO : 67 
 * Timus : 1 
 * AtCoder : 9 
 * marisaoj : 5 
@@ -113,4 +113,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 410
+* Total number of problems: 411
