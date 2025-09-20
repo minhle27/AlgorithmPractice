@@ -20,7 +20,7 @@ Topics included(Some problems may not be listed here):
     * Stack: kattis/evenup(E), SPOJ/ONP(E)(transform algebraic expression into RPN), LC/20, LC/150, UVA/1062
         * Monotonic Stack: LC/496, SPOJ/SSAM219G, LC/85, LC/739, CSES/1645
     * Queue: UVA/10901, CF/644B
-    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D, LC/811, SPOJ/PRO, CF/831C, CF/104417G, kattis/conformity, kattis/candydivision, LC/49, Kattis/cd
+    * Sets and Maps: CSES/1091(E, use multiset), USACO/964(E), USACO/687(M), USACO/831, CSES/1640, USACO/667, CSES/1163, CF/518B, LC/347, USACO/1107, CSES/1188, CSES/1632, CF/616D, LC/811, SPOJ/PRO, CF/831C, CF/104417G, kattis/conformity, kattis/candydivision, LC/49, Kattis/cd, LC/325
         * DAT: UVA/10260
     * Heap(PQ):  USACO/690(M), LC/1046, LC/853, CodeChef/RRATING, USACO/859, kattis/numbertree, UVA/1203, AC/abc214_e, UVA/11997
     * DSU: CSES/1676, LC/128, VNOJ/colquery, USACO/646, CF/104C, LC/305, CF/289390A
@@ -55,7 +55,7 @@ Topics included(Some problems may not be listed here):
     * KMP:
     * Trie: SPOJ/ADAINDEX
 
-8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53, LC/238, USACO/715, SPOJ/HAYBALE, CF/1826D, marisaoj/63, marisaoj/60, marisaoj/66, USACO/691, USACO/787, USACO/645, CF/1398C, CSES/1650
+8. Prefix Sums: USACO/595(M), CSES/1662(similar to USACO/595), CSES/1619(M), CSES/1661(E), USACO/572, kattis/apivotalquestion, CF/909B, LC/253, LC/53, LC/238, USACO/715, SPOJ/HAYBALE, CF/1826D, marisaoj/63, marisaoj/60, marisaoj/66, USACO/691, USACO/787, USACO/645, CF/1398C, CSES/1650, LC 325
     * 2D pref: CSES/1652, USACO/1063
     * Divisibility of subarray: LC/974
     * Difference Array (Inc/Dec Points): CF/816B, CF/295A, CF/102951D, CF/1000C, marisaoj/70
@@ -95,7 +95,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 2 
 * CSES : 64 
 * Codeforces : 82 
-* Leetcode : 79 
+* Leetcode : 80 
 * HackerEarth : 1 
 * LightOJ : 1 
 * OJ.uz : 0 
@@ -113,4 +113,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 416
+* Total number of problems: 417
