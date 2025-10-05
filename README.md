@@ -31,7 +31,7 @@ Topics included(Some problems may not be listed here):
     * Sliding Window: LC/239, CSES/1141, CSES/2428
     * Minimum Stack / Minimum queue: VNOJ/mink, Kattis/bungeebuilder
 
-3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C, CF/616D, USACO/738, CF/307093D, CF/307094C, marisaoj/92, CF/307094A, CF/307094B, CF/307094E, CF/762B, CSES/1641, LC/88
+3. Two pointers: VNOJ/nksgame(M), CSES/1090(E, Greedy, Sorting), LC/11, VNOJ/ndccard, VNOJ/sopenp, LC/56, CF/307092A, CF/307092B, CF/307092C, CF/307093A, CF/307093B, CF/307093C, CF/307093E, CF/307093F, CF/701C, CF/616D, USACO/738, CF/307093D, CF/307094C, marisaoj/92, CF/307094A, CF/307094B, CF/307094E, CF/762B, CSES/1641, LC/88, LC/340
 
 4. Graphs:
     * Graph Traversal: LQDOJ/4601(E), SPOJ/BCDAISY(E), VNOJ/nkguard(H), USACO/965(M), CSES/1666(E), CSES/1668(Bipartiteness check), USACO/668(E), USACO/574(M), USACO/944(E), kattis/birthday, LC/1319, vjudge/Gym-102433C, LC/994, SPOJ/CAM5, USACO/940, USACO/1159
@@ -95,7 +95,7 @@ Topics included(Some problems may not be listed here):
 * CodeChef : 2 
 * CSES : 64 
 * Codeforces : 82 
-* Leetcode : 81 
+* Leetcode : 82 
 * HackerEarth : 1 
 * LightOJ : 1 
 * OJ.uz : 0 
@@ -113,4 +113,4 @@ Topics included(Some problems may not be listed here):
 * Contest : 28 
 * DMOJ : 1 
 * VNOJ : 13 
-* Total number of problems: 418
+* Total number of problems: 419
